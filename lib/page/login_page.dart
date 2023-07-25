@@ -24,10 +24,11 @@ class _Login_PageState extends State<Login_Page> {
         width: mq.width,
         height: mq.height,
         decoration: BoxDecoration(
-            color: Colors.green.shade300,
-            image: DecorationImage(
-                image: AssetImage("assets/images/login.jpg"),
-                fit: BoxFit.fill)),
+          color: const Color.fromARGB(255, 8, 66, 85),
+          // image: DecorationImage(
+          //     image: AssetImage("assets/images/login.jpg"),
+          //     fit: BoxFit.fill)
+        ),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
           child: Container(
@@ -50,7 +51,7 @@ class _Login_PageState extends State<Login_Page> {
                     "Login",
                     style: TextStyle(
                         fontSize: 30,
-                        color: Colors.black,
+                        color: const Color.fromARGB(255, 3, 45, 59),
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -75,23 +76,31 @@ class _Login_PageState extends State<Login_Page> {
                 SizedBox(
                   height: 40,
                 ),
-                SizedBox(
-                    width: mq.width * 0.75,
-                    height: mq.height * 0.06,
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Home_page(username: namecontroller.text,useremail: emailcontroller.text,)));
-                        },
-                        child: Text(
-                          "Login",
-                          style: TextStyle(
-                              color: Color(0xFFED6258),
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        )))
+                Container(
+                  width: mq.width * 0.75,
+                  height: mq.height * 0.06,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Home_Page()));
+                    },
+                    child: Text(
+                      "Login",
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 3, 45, 59),
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      shape: CircleBorder(),
+                      backgroundColor: Colors.white,
+                    ),
+                  ),
+                )
               ],
             ),
           ),

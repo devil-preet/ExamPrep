@@ -24,6 +24,7 @@ class _BCAState extends State<BCA> {
               Color.fromARGB(255, 3, 45, 59) // Use any color
           ),
     );
+
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 8, 66, 85),
       appBar: AppBar(
@@ -39,7 +40,7 @@ class _BCAState extends State<BCA> {
               Row(
                 children: <Widget>[
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                   Expanded(
                     child: ElevatedButton(
@@ -56,7 +57,7 @@ class _BCAState extends State<BCA> {
                     ),
                   ),
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                   Expanded(
                     child: ElevatedButton(
@@ -73,17 +74,19 @@ class _BCAState extends State<BCA> {
                     ),
                   ),
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                 ],
               ),
 
               //second row
-
+              SizedBox(
+                height: 30,
+              ),
               Row(
                 children: <Widget>[
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                   Expanded(
                     child: ElevatedButton(
@@ -100,7 +103,7 @@ class _BCAState extends State<BCA> {
                     ),
                   ),
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                   Expanded(
                     child: ElevatedButton(
@@ -117,17 +120,19 @@ class _BCAState extends State<BCA> {
                     ),
                   ),
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                 ],
               ),
 
               //3rd row
-
+              SizedBox(
+                height: 30,
+              ),
               Row(
                 children: <Widget>[
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                   Expanded(
                     child: ElevatedButton(
@@ -144,7 +149,7 @@ class _BCAState extends State<BCA> {
                     ),
                   ),
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                   Expanded(
                     child: ElevatedButton(
@@ -161,9 +166,12 @@ class _BCAState extends State<BCA> {
                     ),
                   ),
                   const SizedBox(
-                    width: 60,
+                    width: 50,
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 30,
               ),
             ],
           ),
