@@ -3,10 +3,18 @@ import 'package:flutter/services.dart';
 import 'package:pup_prep/page/OTHERS/Other_courses.dart';
 import 'package:pup_prep/page/UG/UG_page.dart';
 
+// <<<<<<< HEAD
 import 'PG/PG_page.dart';
 
 class Home_Page extends StatefulWidget {
   const Home_Page({super.key});
+// =======
+// class Home_page extends StatefulWidget {
+//   Home_page({this.username, this.useremail, super.key});
+
+//   String? username;
+//   String? useremail;
+// >>>>>>> 8d03baed66fc3968534494ab4fd0529eb3221a74
 
   @override
   State<Home_Page> createState() => _Home_PageState();
@@ -15,6 +23,7 @@ class Home_Page extends StatefulWidget {
 class _Home_PageState extends State<Home_Page> {
   @override
   Widget build(BuildContext context) {
+// <<<<<<< HEAD
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
           systemNavigationBarColor:
@@ -72,6 +81,28 @@ class _Home_PageState extends State<Home_Page> {
                 child: const Text(
                   "OTHER-COURSES",
                 ),
+// =======
+//     return SafeArea(
+//       child: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Color(0xFFB25EC1),
+//         ),
+//         body: Center(
+//           child: Column(
+//             crossAxisAlignment: CrossAxisAlignment.center,
+//             mainAxisAlignment: MainAxisAlignment.center,
+//             children: [
+//               Text(
+//                 "Name: ${widget.username}",
+//                 style: TextStyle(fontSize: 20, color: Colors.black),
+//               ),
+//               SizedBox(
+//                 height: 20,
+//               ),
+//               Text(
+//                 "Email: ${widget.useremail}",
+//                 style: TextStyle(fontSize: 20, color: Colors.black),
+// >>>>>>> 8d03baed66fc3968534494ab4fd0529eb3221a74
               ),
             ],
           ),
