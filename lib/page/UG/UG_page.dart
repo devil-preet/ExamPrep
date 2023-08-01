@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:pup_prep/main.dart';
+import 'package:pup_prep/widgets/program_tile.dart';
+import 'package:pup_prep/widgets/up_banner.dart';
 
 import 'BCA/bca_course.dart';
 
@@ -13,34 +15,52 @@ class UnderGrad extends StatefulWidget {
 class _UnderGradState extends State<UnderGrad> {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-          systemNavigationBarColor:
-              Color.fromARGB(255, 3, 45, 59) // Use any color
-          ),
-    );
+    mq = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 8, 66, 85),
+      backgroundColor: Color(0xFF394348),
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 3, 45, 59),
-          title: const Text("CHOOSE YOUR COURSE")),
+        backgroundColor: Color(0xFF394348),
+        title: Text(
+          "PROGRAM",
+        ),
+      ),
       body: SafeArea(
-        child: Center(
+        child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // const SizedBox(height: 32),
-              ElevatedButton(
-                onPressed: () async {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => BCA()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 3, 45, 59)),
-                child: const Text(
-                  "BCA",
+              Up_Banner(
+                labal: 'Get All Program Paper',
+                width: mq.width * 0.8,
+                height: mq.height * 0.06,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Program_Tile(
+                        imageName: 'assets/images/login2.png',
+                        program_name: 'BCA',
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => BCA()));
+                        }),
+                    Program_Tile(
+                      imageName: 'assets/images/other.png',
+                      program_name: 'MCA',
+                    ),
+                    Program_Tile(
+                      imageName: 'assets/images/ug.png',
+                      program_name: 'BTECH',
+                    ),
+                    Program_Tile(
+                      imageName: 'assets/images/pg.png',
+                      program_name: 'BCOM',
+                    ),
+                  ],
                 ),
               ),
             ],
@@ -50,3 +70,5 @@ class _UnderGradState extends State<UnderGrad> {
     );
   }
 }
+
+
