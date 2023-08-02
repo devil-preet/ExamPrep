@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pup_prep/page/UG/BCA/bca_course.dart';
-import 'package:pup_prep/page/UG/BCA/first_sem.dart';
-import 'package:pup_prep/page/UG/UG_page.dart';
 import 'package:pup_prep/page/home_page.dart';
 
 void main() {

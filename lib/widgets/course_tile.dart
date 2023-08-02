@@ -71,7 +71,7 @@ class Courses_Tile extends StatelessWidget {
                   maxLines: 2,
                   style: TextStyle(
                     color: Color.fromARGB(255, 253, 249, 233),
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -80,7 +80,7 @@ class Courses_Tile extends StatelessWidget {
                   maxLines: 2,
                   style: TextStyle(
                     color: Color.fromARGB(255, 253, 249, 233),
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

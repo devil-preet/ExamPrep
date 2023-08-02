@@ -58,7 +58,7 @@ String title2;
                     Text(
                       title,
                       style:
-                          TextStyle(color: Colors.white, fontSize: 25),
+                          TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     SizedBox(
                       height: 5,
@@ -66,7 +66,7 @@ String title2;
                     Text(
                       title2,
                       style:
-                          TextStyle(color: Colors.white, fontSize: 25),
+                          TextStyle(color: Colors.white, fontSize: 22),
                     ),
                   ],
                 )
