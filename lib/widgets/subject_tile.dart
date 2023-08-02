@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:pup_prep/main.dart';
 
 class Subject_tile extends StatelessWidget {
-   Subject_tile({
+  Subject_tile({
     super.key,
-   required this.onTap,
-   required this.image_name,
-   required this.title,
-   required this.title2,
+    required this.onTap,
+    required this.image_name,
+    required this.title,
+    // required this.title2,
   });
-Function() onTap;
-String image_name;
-String title;
-String title2;
+  Function() onTap;
+  String image_name;
+  String title;
+  // String title2;
   @override
   Widget build(BuildContext context) {
-    mq=MediaQuery.of(context).size;
+    mq = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
       child: Container(
@@ -48,26 +48,22 @@ String title2;
                   width: mq.width * 0.3,
                   height: mq.height * 0.15,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage(
-                              image_name))),
+                      image: DecorationImage(image: AssetImage(image_name))),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       title,
-                      style:
-                          TextStyle(color: Colors.white, fontSize: 22),
+                      style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      title2,
-                      style:
-                          TextStyle(color: Colors.white, fontSize: 22),
-                    ),
+                    // SizedBox(
+                    //   height: 5,
+                    // ),
+                    // Text(
+                    //   title2,
+                    //   style: TextStyle(color: Colors.white, fontSize: 22),
+                    // ),
                   ],
                 )
               ],
@@ -85,7 +81,7 @@ String title2;
                 child: Center(
                   child: Text(
                     'Click To Get',
-                    style: TextStyle(color: Colors.red, fontSize: 20),
+                    style: TextStyle(color: Color(0xFF243239), fontSize: 20),
                   ),
                 ),
               ),

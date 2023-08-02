@@ -23,7 +23,9 @@ class _BCAState extends State<BCA> {
     return Scaffold(
       backgroundColor: Color(0xFF394348),
       appBar: AppBar(
-          backgroundColor: Color(0xFF394348), title: const Text("SEMESTER")),
+          backgroundColor: Color(0xFF394348),
+          centerTitle: true,
+          title: const Text("PROGRAM - BCA")),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -39,7 +41,7 @@ class _BCAState extends State<BCA> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => First_Sem()));
                 },
-                sem_name: 'First Semester Paper',
+                sem_name: '1st Semester',
                 image_name: 'assets/images/sem/1no.png',
               ),
               SizedBox(
@@ -50,7 +52,7 @@ class _BCAState extends State<BCA> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Second_Sem()));
                 },
-                sem_name: 'Second Semester Paper',
+                sem_name: '2nd Semester',
                 image_name: 'assets/images/sem/2no.png',
               ),
               SizedBox(
@@ -61,7 +63,7 @@ class _BCAState extends State<BCA> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Third_Sem()));
                 },
-                sem_name: 'Third Semester Paper',
+                sem_name: '3rd Semester',
                 image_name: 'assets/images/sem/3no.png',
               ),
               SizedBox(
@@ -72,7 +74,7 @@ class _BCAState extends State<BCA> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Fourth_Sem()));
                 },
-                sem_name: 'Fourth Semester Paper',
+                sem_name: '4th Semester',
                 image_name: 'assets/images/sem/4no.png',
               ),
               SizedBox(
@@ -83,7 +85,7 @@ class _BCAState extends State<BCA> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Fifth_Sem()));
                 },
-                sem_name: 'Fifth Semester Paper',
+                sem_name: '5th Semester',
                 image_name: 'assets/images/sem/5no.png',
               ),
               SizedBox(
@@ -94,150 +96,12 @@ class _BCAState extends State<BCA> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Sixth_Sem()));
                 },
-                sem_name: 'Sixth Semester Paper',
+                sem_name: '6th Semester',
                 image_name: 'assets/images/sem/6no.png',
               ),
               SizedBox(
                 height: 20,
               ),
-              // const SizedBox(height: 32),
-              // Row(
-              //   children:[
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //     Expanded(
-              //       child: ElevatedButton(
-              //         onPressed: () async {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(builder: (context) => First_Sem()),
-              //           );
-              //         },
-              //         style: ElevatedButton.styleFrom(
-              //           backgroundColor: Color(0xFF394348),
-              //         ),
-              //         child:
-              //             const Text("1st Sem", style: TextStyle(fontSize: 20)),
-              //       ),
-              //     ),
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //     Expanded(
-              //       child: ElevatedButton(
-              //         onPressed: () async {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(builder: (context) => Second_Sem()),
-              //           );
-              //         },
-              //         style: ElevatedButton.styleFrom(
-              //             backgroundColor:
-              //                 const Color.fromARGB(255, 3, 45, 59)),
-              //         child: const Text("2nd", style: TextStyle(fontSize: 32)),
-              //       ),
-              //     ),
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //   ],
-              // ),
-
-              // //second row
-              // SizedBox(
-              //   height: 30,
-              // ),
-              // Row(
-              //   children: <Widget>[
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //     Expanded(
-              //       child: ElevatedButton(
-              //         onPressed: () async {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(builder: (context) => Third_Sem()),
-              //           );
-              //         },
-              //         style: ElevatedButton.styleFrom(
-              //             backgroundColor:
-              //                 const Color.fromARGB(255, 3, 45, 59)),
-              //         child: const Text("3rd", style: TextStyle(fontSize: 32)),
-              //       ),
-              //     ),
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //     Expanded(
-              //       child: ElevatedButton(
-              //         onPressed: () async {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(builder: (context) => Fourth_Sem()),
-              //           );
-              //         },
-              //         style: ElevatedButton.styleFrom(
-              //             backgroundColor:
-              //                 const Color.fromARGB(255, 3, 45, 59)),
-              //         child: const Text("4th", style: TextStyle(fontSize: 32)),
-              //       ),
-              //     ),
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //   ],
-              // ),
-
-              // //3rd row
-              // SizedBox(
-              //   height: 30,
-              // ),
-              // Row(
-              //   children: <Widget>[
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //     Expanded(
-              //       child: ElevatedButton(
-              //         onPressed: () async {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(builder: (context) => Fifth_Sem()),
-              //           );
-              //         },
-              //         style: ElevatedButton.styleFrom(
-              //             backgroundColor:
-              //                 const Color.fromARGB(255, 3, 45, 59)),
-              //         child: const Text("5th", style: TextStyle(fontSize: 32)),
-              //       ),
-              //     ),
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //     Expanded(
-              //       child: ElevatedButton(
-              //         onPressed: () async {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(builder: (context) => Sixth_Sem()),
-              //           );
-              //         },
-              //         style: ElevatedButton.styleFrom(
-              //             backgroundColor:
-              //                 const Color.fromARGB(255, 3, 45, 59)),
-              //         child: const Text("6th", style: TextStyle(fontSize: 32)),
-              //       ),
-              //     ),
-              //     const SizedBox(
-              //       width: 50,
-              //     ),
-              //   ],
-              // ),
-              // SizedBox(
-              //   height: 30,
-              // ),
             ],
           ),
         ),

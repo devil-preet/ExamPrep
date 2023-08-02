@@ -20,8 +20,9 @@ class _First_SemState extends State<First_Sem> {
         backgroundColor: Color(0xFF394348),
         appBar: AppBar(
           backgroundColor: Color(0xFF394348),
+          centerTitle: true,
           title: Text(
-            "FIRST SEM",
+            "FIRST SEMESTER",
           ),
         ),
         body: SingleChildScrollView(
@@ -29,13 +30,13 @@ class _First_SemState extends State<First_Sem> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Up_Banner(
-                labal: 'Select Subject',
+                labal: 'Choose Subject',
                 width: mq.width * 0.7,
                 height: mq.height * 0.06,
               ),
               Subject_tile(
-                title: 'Get PDF of C Previous',
-                title2: 'Paper',
+                title: 'Programming - \nFundamentals Using C',
+                // title2: 'Paper',
                 image_name: 'assets/images/firstsem/C.png',
                 onTap: () async {
                   final url =
@@ -45,8 +46,8 @@ class _First_SemState extends State<First_Sem> {
                 },
               ),
               Subject_tile(
-                title: 'Get PDF of IT Previous',
-                title2: 'Paper',
+                title: 'Fundametals Of - \nInformation Technology',
+                // title2: 'Paper',
                 image_name: 'assets/images/firstsem/it.png',
                 onTap: () async {
                   final url =
@@ -56,8 +57,8 @@ class _First_SemState extends State<First_Sem> {
                 },
               ),
               Subject_tile(
-                title: 'Get PDF of OA Previuos',
-                title2: 'Paper',
+                title: 'Office Automation',
+                // title2: 'Paper',
                 image_name: 'assets/images/firstsem/Oa.png',
                 onTap: () async {
                   final url =

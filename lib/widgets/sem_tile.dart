@@ -38,7 +38,7 @@ class Semester_tile extends StatelessWidget {
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                stops: [0.01, 2.0]),
+                stops: [0.01, 1.0]),
           ),
           child: Row(children: [
             Container(
@@ -51,7 +51,7 @@ class Semester_tile extends StatelessWidget {
                   color: Colors.white),
             ),
             SizedBox(
-              width: 20,
+              width: 30,
             ),
             Container(
               width: 5,
@@ -68,7 +68,7 @@ class Semester_tile extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5)),
             ),
             SizedBox(
-              width: 20,
+              width: 40,
             ),
             Text(
               sem_name,
