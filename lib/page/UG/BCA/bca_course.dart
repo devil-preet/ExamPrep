@@ -30,8 +30,8 @@ class _BCAState extends State<BCA> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Up_Banner(
-                labal: 'Select your Semester',
-                width: mq.width * 0.7,
+                labal: 'Choose your Semester',
+                width: mq.width * 0.8,
                 height: mq.height * 0.06,
               ),
               Semester_tile(

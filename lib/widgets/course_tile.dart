@@ -57,7 +57,14 @@ class Courses_Tile extends StatelessWidget {
               width: mq.width * 0.009,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(255, 255, 215, 215),
+                gradient: LinearGradient(
+                    colors: [
+                      Color(0xFF243239),
+                      const Color.fromARGB(255, 93, 110, 118),
+                    ],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    stops: [0.01, 2.0]),
               ),
             ),
             SizedBox(
@@ -95,7 +102,10 @@ class Courses_Tile extends StatelessWidget {
                     child: Center(
                       child: Text(
                         btext,
-                        style: TextStyle(color: Colors.red, fontSize: 17,fontWeight: FontWeight.w500),
+                        style: TextStyle(
+                            color: Color(0xFF243239),
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),

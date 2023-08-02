@@ -21,7 +21,7 @@ class _UnderGradState extends State<UnderGrad> {
       appBar: AppBar(
         backgroundColor: Color(0xFF394348),
         title: Text(
-          "PROGRAM",
+          "CHOOSE YOUR PROGRAM",
         ),
       ),
       body: SafeArea(
@@ -29,8 +29,11 @@ class _UnderGradState extends State<UnderGrad> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 20,
+              ),
               Up_Banner(
-                labal: 'Get All Program Paper',
+                labal: 'scroll right to browse',
                 width: mq.width * 0.8,
                 height: mq.height * 0.06,
               ),
@@ -70,5 +73,3 @@ class _UnderGradState extends State<UnderGrad> {
     );
   }
 }
-
-

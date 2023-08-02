@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pup_prep/main.dart';
 
 class Semester_tile extends StatelessWidget {
-   Semester_tile({
+  Semester_tile({
     super.key,
     required this.image_name,
     required this.sem_name,
@@ -13,10 +13,9 @@ class Semester_tile extends StatelessWidget {
   Function() onTap;
   @override
   Widget build(BuildContext context) {
-    mq=MediaQuery.of(context).size;
+    mq = MediaQuery.of(context).size;
     return Padding(
-      padding:
-          const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: GestureDetector(
         onTap: onTap,
         child: Container(
@@ -47,11 +46,9 @@ class Semester_tile extends StatelessWidget {
               width: 60,
               height: mq.height * 0.07,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(image_name)),
-                    borderRadius: BorderRadius.circular(100),
-                    color: Colors.white
-              ),
+                  image: DecorationImage(image: AssetImage(image_name)),
+                  borderRadius: BorderRadius.circular(100),
+                  color: Colors.white),
             ),
             SizedBox(
               width: 20,
@@ -60,7 +57,14 @@ class Semester_tile extends StatelessWidget {
               width: 5,
               height: mq.height * 0.07,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 255, 215, 215),
+                  gradient: LinearGradient(
+                      colors: [
+                        Color(0xFF243239),
+                        const Color.fromARGB(255, 93, 110, 118),
+                      ],
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      stops: [0.01, 2.0]),
                   borderRadius: BorderRadius.circular(5)),
             ),
             SizedBox(

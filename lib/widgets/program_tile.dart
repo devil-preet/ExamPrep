@@ -2,55 +2,54 @@ import 'package:flutter/material.dart';
 import 'package:pup_prep/main.dart';
 
 class Program_Tile extends StatelessWidget {
-   Program_Tile({
+  Program_Tile({
     super.key,
     this.imageName,
     this.onTap,
-   required this.program_name,
+    required this.program_name,
   });
- String? imageName;
- String program_name;
- Function()? onTap;
+  String? imageName;
+  String program_name;
+  Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: Container(
-        width: mq.width,
+        width: mq.width * 0.95,
         height: mq.height * 0.5,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                color: Color(0xFF000000),
-                offset: Offset(6.0, 6.0),
-                spreadRadius: 2.0,
-                blurRadius: 10.0,
-              ),
-            ],
-            gradient: LinearGradient(
-                colors: [
-                  const Color.fromARGB(255, 93, 110, 118),
-                  Color(0xFF243239),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [0.01, 2.0]),
-                ),
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Color(0xFF000000),
+              offset: Offset(6.0, 6.0),
+              spreadRadius: 2.0,
+              blurRadius: 10.0,
+            ),
+          ],
+          gradient: LinearGradient(
+              colors: [
+                const Color.fromARGB(255, 93, 110, 118),
+                Color(0xFF243239),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              stops: [0.01, 2.0]),
+        ),
         child: Padding(
           padding: EdgeInsets.only(left: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 50,top: 20),
+                padding: EdgeInsets.only(left: 50, top: 20),
                 child: Container(
                   width: mq.width * 0.6,
                   height: mq.height * 0.28,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              imageName.toString()))),
+                          image: AssetImage(imageName.toString()))),
                 ),
               ),
               Text(
@@ -61,36 +60,44 @@ class Program_Tile extends StatelessWidget {
                     fontWeight: FontWeight.w500),
               ),
               SizedBox(
-                height: 10,
+                height: 15,
               ),
               Text(
-                'Get all sem ${program_name.toLowerCase()} paper',
+                'Get previous year question-papers of ${program_name.toLowerCase()}',
                 style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 15,
                   color: Colors.white,
                   // fontWeight: FontWeight.w500
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 25,
               ),
               GestureDetector(
                 onTap: onTap,
                 child: Container(
-                  width: 160,
+                  width: 200,
                   height: 55,
                   decoration: BoxDecoration(
                       color: Color(0xFFFFF0F0),
                       borderRadius: BorderRadius.circular(50)),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(width: 10,),
-                      Icon(Icons.arrow_forward,color: Colors.red,size: 45,),
-                      SizedBox(width: 10,),
+                      Icon(
+                        Icons.arrow_forward_outlined,
+                        color: Color(0xFF243239),
+                        size: 25,
+                      ),
+                      SizedBox(
+                        width: 3,
+                      ),
                       Text(
-                        'Get Paper',
+                        'choose semester',
                         style: TextStyle(
-                            color: Colors.red, fontSize: 18,fontWeight: FontWeight.bold),
+                            color: Color(0xFF243239),
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),

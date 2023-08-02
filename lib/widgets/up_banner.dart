@@ -18,9 +18,20 @@ class Up_Banner extends StatelessWidget {
         width: width,
         height: height,
         decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Color(0xFF000000),
+                offset: Offset(6.0, 6.0),
+                spreadRadius: 2.0,
+                blurRadius: 10.0,
+              ),
+            ],
             gradient: LinearGradient(colors: [
-              const Color.fromARGB(255, 245, 153, 153),
-              const Color.fromARGB(255, 174, 12, 0)
+              const Color.fromARGB(255, 93, 110, 118),
+              Color(0xFF243239),
+              const Color.fromARGB(255, 93, 110, 118),
+              Color(0xFF243239),
+              const Color.fromARGB(255, 93, 110, 118)
             ]),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20),

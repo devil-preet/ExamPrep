@@ -22,7 +22,7 @@ class _Home_PageState extends State<Home_Page> {
       appBar: AppBar(
           backgroundColor: Color(0xFF394348),
           title: Text(
-            "CHOOSE YOUR COURSE TYPE ",
+            "CHOOSE YOUR COURSE LEVEL ",
             style: TextStyle(color: Colors.white),
           )),
       body: SafeArea(
@@ -31,13 +31,13 @@ class _Home_PageState extends State<Home_Page> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Up_Banner(
-                labal: '"Graduations"',
+                labal: 'COURSES',
                 width: mq.width * 0.6,
                 height: mq.height * 0.06,
               ),
               Courses_Tile(
                   imageName: "assets/images/ug.png",
-                  btext: 'UG Paper',
+                  btext: 'click here',
                   cours_text: "Under Graduation",
                   onTap: () {
                     Navigator.push(context,
@@ -45,16 +45,21 @@ class _Home_PageState extends State<Home_Page> {
                   }),
               Courses_Tile(
                   imageName: "assets/images/pg.png",
-                  btext: 'PG Paper',
+                  btext: 'click here',
                   cours_text: "Post Graduation",
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => PostGrad()));
                   }),
+              Up_Banner(
+                labal: 'OTHER COURSES',
+                width: mq.width * 0.6,
+                height: mq.height * 0.06,
+              ),
               Courses_Tile(
                   imageName: "assets/images/other.png",
-                  btext: 'Other Paper',
-                  cours_text: "Other Graduation",
+                  btext: 'click here',
+                  cours_text: "PGDCA",
                   onTap: () {
                     Navigator.push(
                         context,
@@ -64,53 +69,6 @@ class _Home_PageState extends State<Home_Page> {
             ],
           ),
         ),
-        // child: Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   crossAxisAlignment: CrossAxisAlignment.center,
-        //   children: [
-        //     // const SizedBox(height: 32),
-        //     ElevatedButton(
-        //       onPressed: () async {
-        //         Navigator.push(
-        //           context,
-        //           MaterialPageRoute(builder: (context) => UnderGrad()),
-        //         );
-        //       },
-        //       style: ElevatedButton.styleFrom(
-        //           backgroundColor: const Color.fromARGB(255, 3, 45, 59)),
-        //       child: const Text(
-        //         "UG-COURSES",
-        //       ),
-        //     ),
-        //     ElevatedButton(
-        //       onPressed: () async {
-        //         Navigator.push(
-        //           context,
-        //           MaterialPageRoute(builder: (context) => PostGrad()),
-        //         );
-        //       },
-        //       style: ElevatedButton.styleFrom(
-        //           backgroundColor: const Color.fromARGB(255, 3, 45, 59)),
-        //       child: const Text(
-        //         "PG-COURSES",
-        //       ),
-        //     ),
-        //     ElevatedButton(
-        //       onPressed: () async {
-        //         Navigator.push(
-        //           context,
-        //           MaterialPageRoute(
-        //               builder: (context) => const OtherCourses()),
-        //         );
-        //       },
-        //       style: ElevatedButton.styleFrom(
-        //           backgroundColor: const Color.fromARGB(255, 3, 45, 59)),
-        //       child: const Text(
-        //         "OTHER-COURSES",
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }
