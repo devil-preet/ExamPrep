@@ -32,12 +32,12 @@ class Subject_tile extends StatelessWidget {
             ],
             gradient: LinearGradient(
                 colors: [
-                  const Color.fromARGB(255, 93, 110, 118),
-                  Color(0xFF243239),
+                  Colors.blue,
+                  Colors.purple,
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                stops: [0.01, 2.0]),
+                stops: [0.1, 6.0]),
             borderRadius: BorderRadius.circular(15)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -71,9 +71,9 @@ class Subject_tile extends StatelessWidget {
             GestureDetector(
               onTap: onTap,
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 60),
-                width: 150,
-                height: 50,
+                margin: EdgeInsets.symmetric(horizontal: 90),
+                width: 120,
+                height: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   color: Colors.white,
@@ -81,7 +81,7 @@ class Subject_tile extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Click To Get',
-                    style: TextStyle(color: Color(0xFF243239), fontSize: 20),
+                    style: TextStyle(color: Colors.blue.shade900, fontSize: 15),
                   ),
                 ),
               ),

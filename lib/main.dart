@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             // ignore: deprecated_member_use
             bodyText1: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
       ),
-      home:  Home_Page(),
+      home: Home_Page(),
     );
   }
 }

@@ -31,8 +31,8 @@ class Courses_Tile extends StatelessWidget {
             ],
             gradient: LinearGradient(
                 colors: [
-                  const Color.fromARGB(255, 93, 110, 118),
-                  Color(0xFF243239),
+                  Colors.blue,
+                  Colors.purple,
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -59,8 +59,8 @@ class Courses_Tile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 gradient: LinearGradient(
                     colors: [
-                      Color(0xFF243239),
-                      const Color.fromARGB(255, 93, 110, 118),
+                      Colors.purple.shade300,
+                      Colors.blue.shade200,
                     ],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
@@ -103,7 +103,7 @@ class Courses_Tile extends StatelessWidget {
                       child: Text(
                         btext,
                         style: TextStyle(
-                            color: Color(0xFF243239),
+                            color: Colors.blue.shade900,
                             fontSize: 17,
                             fontWeight: FontWeight.w500),
                       ),

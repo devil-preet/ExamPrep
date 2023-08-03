@@ -27,11 +27,8 @@ class Up_Banner extends StatelessWidget {
               ),
             ],
             gradient: LinearGradient(colors: [
-              const Color.fromARGB(255, 93, 110, 118),
-              Color(0xFF243239),
-              const Color.fromARGB(255, 93, 110, 118),
-              Color(0xFF243239),
-              const Color.fromARGB(255, 93, 110, 118)
+              Colors.purple,
+              Colors.blue,
             ]),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20),

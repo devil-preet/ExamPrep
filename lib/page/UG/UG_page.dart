@@ -18,13 +18,15 @@ class _UnderGradState extends State<UnderGrad> {
     mq = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
+        height: mq.height,
+        width: mq.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
               Colors.blue,
               Colors.purple
             ], // You can change the colors here
-            begin: Alignment.topCenter, end: Alignment.bottomCenter,
+            // begin: Alignment.topCenter, end: Alignment.bottomCenter,
           ),
         ),
         // ),
@@ -76,9 +78,19 @@ class _UnderGradState extends State<UnderGrad> {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: Color(0xFF394348),
-        title: Text(
-          "CHOOSE YOUR PROGRAM",
+        centerTitle: true,
+        title: Text("CHOOSE YOUR PROGRAM"),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.blue,
+                Colors.purple
+              ], // You can change the colors here
+              // begin: Alignment.topCenter,
+              // end: Alignment.bottomCenter,
+            ),
+          ),
         ),
       ),
     );

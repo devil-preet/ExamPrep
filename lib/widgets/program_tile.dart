@@ -30,12 +30,12 @@ class Program_Tile extends StatelessWidget {
           ],
           gradient: LinearGradient(
               colors: [
-                const Color.fromARGB(255, 93, 110, 118),
-                Color(0xFF243239),
+                Colors.blue,
+                Colors.purple,
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              stops: [0.01, 2.0]),
+              stops: [0.1, 3.0]),
         ),
         child: Padding(
           padding: EdgeInsets.only(left: 20),
@@ -86,7 +86,7 @@ class Program_Tile extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.arrow_forward_outlined,
-                        color: Color(0xFF243239),
+                        color: Colors.blue.shade900,
                         size: 25,
                       ),
                       SizedBox(
@@ -95,7 +95,7 @@ class Program_Tile extends StatelessWidget {
                       Text(
                         'choose semester',
                         style: TextStyle(
-                            color: Color(0xFF243239),
+                            color: Colors.blue.shade900,
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
                       ),

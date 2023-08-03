@@ -33,12 +33,15 @@ class Semester_tile extends StatelessWidget {
             ],
             gradient: LinearGradient(
                 colors: [
-                  const Color.fromARGB(255, 93, 110, 118),
-                  Color(0xFF243239),
+                  Colors.purple,
+                  Colors.blue,
                 ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [0.01, 1.0]),
+                // begin: Alignment.topCenter,
+                // end: Alignment.bottomCenter,
+                stops: [
+                  0.1,
+                  1.0
+                ]),
           ),
           child: Row(children: [
             Container(
@@ -59,8 +62,8 @@ class Semester_tile extends StatelessWidget {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                       colors: [
-                        Color(0xFF243239),
-                        const Color.fromARGB(255, 93, 110, 118),
+                        Colors.purple.shade400,
+                        Colors.blue.shade200,
                       ],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
