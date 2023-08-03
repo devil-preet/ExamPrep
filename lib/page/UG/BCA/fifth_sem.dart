@@ -104,29 +104,29 @@ class _Fifth_SemState extends State<Fifth_Sem> {
                 //   },
                 // ),
 
-                // //----------------------------------punjabi---------------------------------
-                // Subject_tile(
-                //   title: 'Punjabi',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------punjabi---------------------------------
+                Subject_tile(
+                  title: 'Punjabi',
+                  image_name: 'assets/images/firstsem/pub.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //----------------------------------IT---------------------------------
-                // Subject_tile(
-                //   title: 'Punjabi Mudla Gyan',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------punjabi-mudla-gyan---------------------------------
+                Subject_tile(
+                  title: 'Punjabi Mudla Gyan',
+                  image_name: 'assets/images/firstsem/pbi.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
               ],
             ),
           ),
@@ -134,7 +134,7 @@ class _Fifth_SemState extends State<Fifth_Sem> {
       ),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("BCA - 2nd SEMESTER"),
+        title: Text("BCA - 5TH SEMESTER"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(

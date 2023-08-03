@@ -107,18 +107,18 @@ class _First_SemState extends State<First_Sem> {
                   },
                 ),
 
-                //----------------------------------punjabi-mudla-gyan---------------------------------
-                // Subject_tile(
-                //   title: 'Punjabi Mudla Gyan',
-                //   // title2: 'Paper',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                // ----------------------------------punjabi-mudla-gyan---------------------------------
+                Subject_tile(
+                  title: 'Punjabi Mudla Gyan',
+                  // title2: 'Paper',
+                  image_name: 'assets/images/firstsem/pbi.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
               ],
             ),
           ),
