@@ -44,65 +44,65 @@ class _Fifth_SemState extends State<Fifth_Sem> {
                   height: mq.height * 0.06,
                 ),
 
-                // //-----------------------------english----------------------------
-                // Subject_tile(
-                //   title: 'English Litrary Skills-1',
-                //   image_name: 'assets/images/firstsem/C.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //-----------------------------english----------------------------
+                Subject_tile(
+                  title: 'English Litrary Skills-1',
+                  image_name: 'assets/images/firstsem/eng.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //-------------------------------sad----------------------------------
-                // Subject_tile(
-                //   title: 'System Analysis & Design',
-                //   image_name: 'assets/images/firstsem/Oa.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //-------------------------------sad----------------------------------
+                Subject_tile(
+                  title: 'System Analysis & \nDesign',
+                  image_name: 'assets/images/firstsem/sad.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //---------------------------------sas---------------------------------
-                // Subject_tile(
-                //   title: 'System Software',
-                //   image_name: 'assets/images/firstsem/C.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //---------------------------------ss---------------------------------
+                Subject_tile(
+                  title: 'System Software',
+                  image_name: 'assets/images/firstsem/ss.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //----------------------------------java---------------------------------
-                // Subject_tile(
-                //   title: 'Java Programming',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------java---------------------------------
+                Subject_tile(
+                  title: 'Java Programming',
+                  image_name: 'assets/images/firstsem/java.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //----------------------------------web-designing---------------------------------
-                // Subject_tile(
-                //   title: 'Web Designing Using HTML & DHTML',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------web-designing---------------------------------
+                Subject_tile(
+                  title: 'Web Designing Using \nHTML & DHTML',
+                  image_name: 'assets/images/firstsem/html.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
                 //----------------------------------punjabi---------------------------------
                 Subject_tile(
