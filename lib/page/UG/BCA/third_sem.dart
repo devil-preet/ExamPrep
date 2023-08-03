@@ -56,77 +56,77 @@ class _Third_SemState extends State<Third_Sem> {
                   },
                 ),
 
-                // //-----------------------------discrete-maths----------------------------
-                // Subject_tile(
-                //   title: 'Descrete Maths',
-                //   image_name: 'assets/images/firstsem/C.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //-----------------------------discrete-maths----------------------------
+                Subject_tile(
+                  title: 'Descrete Maths',
+                  image_name: 'assets/images/firstsem/dmath.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //---------------------------------cpp---------------------------------
-                // Subject_tile(
-                //   title: 'OOPs uing C++',
-                //   image_name: 'assets/images/firstsem/C.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------csa---------------------------------
+                Subject_tile(
+                  title: 'CSOA',
+                  image_name: 'assets/images/firstsem/csa.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //---------------------------------dbms---------------------------------
-                // Subject_tile(
-                //   title: 'DBMS',
-                //   image_name: 'assets/images/firstsem/C.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //-------------------------------evs----------------------------------
+                Subject_tile(
+                  title: 'EVS',
+                  image_name: 'assets/images/firstsem/evs.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //----------------------------------csa---------------------------------
-                // Subject_tile(
-                //   title: 'CSOA',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //---------------------------------dbms---------------------------------
+                Subject_tile(
+                  title: 'DBMS',
+                  image_name: 'assets/images/firstsem/dbms.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //-------------------------------evs----------------------------------
-                // Subject_tile(
-                //   title: 'EVS',
-                //   image_name: 'assets/images/firstsem/Oa.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //---------------------------------cpp---------------------------------
+                Subject_tile(
+                  title: 'OOPs uing C++',
+                  image_name: 'assets/images/firstsem/cpp.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
-                // //----------------------------------punjabi---------------------------------
-                // Subject_tile(
-                //   title: 'Punjabi',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------punjabi---------------------------------
+                Subject_tile(
+                  title: 'Punjabi',
+                  image_name: 'assets/images/firstsem/pub.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
                 // //----------------------------------punjabi-mudla-gyan---------------------------------
                 // Subject_tile(
