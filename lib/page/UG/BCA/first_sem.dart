@@ -17,18 +17,12 @@ class _First_SemState extends State<First_Sem> {
     mq = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
-        // backgroundColor: Color(0xFF394348),
-
         child: Container(
           height: mq.height,
           width: mq.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter, end: Alignment.bottomCenter,
+              colors: [Colors.blue, Colors.purple],
             ),
           ),
           child: SingleChildScrollView(
@@ -40,12 +34,9 @@ class _First_SemState extends State<First_Sem> {
                   width: mq.width * 0.7,
                   height: mq.height * 0.06,
                 ),
-
-                //----------------------------------english---------------------------------
                 Subject_tile(
                   title: 'General English-1',
-                  // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/eng.png',
+                  image_name: 'assets/images/technical/eng.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -53,13 +44,9 @@ class _First_SemState extends State<First_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------IT---------------------------------
                 Subject_tile(
                   title: 'Fundametals Of - \nInformation Technology',
-                  // title2: 'Paper',
-
-                  image_name: 'assets/images/firstsem/IT.png',
+                  image_name: 'assets/images/technical/IT.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -67,12 +54,9 @@ class _First_SemState extends State<First_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //-------------------------------OA----------------------------------
                 Subject_tile(
                   title: 'Office Automation',
-                  // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/OA2.png',
+                  image_name: 'assets/images/technical/OA2.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -80,12 +64,9 @@ class _First_SemState extends State<First_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //---------------------------------C---------------------------------
                 Subject_tile(
                   title: 'Programming - \nFundamentals Using C',
-                  // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/C.png',
+                  image_name: 'assets/images/technical/C.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -93,12 +74,9 @@ class _First_SemState extends State<First_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------punjabi---------------------------------
                 Subject_tile(
                   title: 'Punjabi',
-                  // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/pub.png',
+                  image_name: 'assets/images/technical/pub.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -106,12 +84,9 @@ class _First_SemState extends State<First_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                // ----------------------------------punjabi-mudla-gyan---------------------------------
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
-                  // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/pbi.png',
+                  image_name: 'assets/images/technical/pbi.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -130,12 +105,7 @@ class _First_SemState extends State<First_Sem> {
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
+              colors: [Colors.blue, Colors.purple],
             ),
           ),
         ),
