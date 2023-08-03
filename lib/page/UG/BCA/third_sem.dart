@@ -44,17 +44,17 @@ class _Third_SemState extends State<Third_Sem> {
                   height: mq.height * 0.06,
                 ),
 
-                // //----------------------------------english---------------------------------
-                // Subject_tile(
-                //   title: 'English Communication Skills-1',
-                //   image_name: 'assets/images/firstsem/it.png',
-                //   onTap: () async {
-                //     final url =
-                //         "https://previous-paper.000webhostapp.com/index.pdf";
-                //     final file = await Pdf_Api.loadnetwork(url);
-                //     Pdf_Api.openpdf(context, file);
-                //   },
-                // ),
+                //----------------------------------english---------------------------------
+                Subject_tile(
+                  title: 'English Communication \nSkills-1',
+                  image_name: 'assets/images/firstsem/engc.png',
+                  onTap: () async {
+                    final url =
+                        "https://previous-paper.000webhostapp.com/index.pdf";
+                    final file = await Pdf_Api.loadnetwork(url);
+                    Pdf_Api.openpdf(context, file);
+                  },
+                ),
 
                 // //-----------------------------discrete-maths----------------------------
                 // Subject_tile(
