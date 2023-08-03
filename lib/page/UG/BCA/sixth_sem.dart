@@ -27,11 +27,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
           width: mq.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter, end: Alignment.bottomCenter,
+              colors: [Colors.blue, Colors.purple],
             ),
           ),
           child: SingleChildScrollView(
@@ -43,11 +39,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                   width: mq.width * 0.7,
                   height: mq.height * 0.06,
                 ),
-
-                //-----------------------------english----------------------------
                 Subject_tile(
                   title: 'English Litrary Skills-2',
-                  image_name: 'assets/images/firstsem/eng.png',
+                  image_name: 'assets/images/technical/eng.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -55,11 +49,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //-------------------------------E-commerce----------------------------------
                 Subject_tile(
                   title: 'E-Commerce',
-                  image_name: 'assets/images/firstsem/ec.png',
+                  image_name: 'assets/images/technical/ec.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -67,11 +59,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //---------------------------------os---------------------------------
                 Subject_tile(
                   title: 'Operating Systems',
-                  image_name: 'assets/images/firstsem/os.png',
+                  image_name: 'assets/images/technical/os.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -79,11 +69,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------soft-eng---------------------------------
                 Subject_tile(
                   title: 'Software Engeeniring',
-                  image_name: 'assets/images/firstsem/swe.png',
+                  image_name: 'assets/images/technical/swe.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -91,11 +79,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------asp.net---------------------------------
                 Subject_tile(
                   title: 'Web Designing Using \nASP.NET',
-                  image_name: 'assets/images/firstsem/asp.png',
+                  image_name: 'assets/images/technical/asp.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -103,11 +89,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------punjabi---------------------------------
                 Subject_tile(
                   title: 'Punjabi',
-                  image_name: 'assets/images/firstsem/pub.png',
+                  image_name: 'assets/images/technical/pub.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -115,11 +99,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------punjabi-mudla-gyan---------------------------------
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/firstsem/pbi.png',
+                  image_name: 'assets/images/technical/pbi.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -138,12 +120,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
+              colors: [Colors.blue, Colors.purple],
             ),
           ),
         ),

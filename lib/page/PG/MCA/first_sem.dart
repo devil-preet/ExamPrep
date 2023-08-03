@@ -38,7 +38,7 @@ class _First_SemState extends State<First_Sem> {
                   title: 'Computer Organization \nand Architecture',
                   // title2: 'Paper',
 
-                  image_name: 'assets/images/firstsem/csa.png',
+                  image_name: 'assets/images/technical/csa.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -49,7 +49,7 @@ class _First_SemState extends State<First_Sem> {
                 Subject_tile(
                   title: 'Data Structures & \nAlgorithms',
                   // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/dsa.png',
+                  image_name: 'assets/images/technical/dsa.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -60,7 +60,7 @@ class _First_SemState extends State<First_Sem> {
                 Subject_tile(
                   title: 'OOps using C++',
                   // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/cpp.png',
+                  image_name: 'assets/images/technical/cpp.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -71,7 +71,7 @@ class _First_SemState extends State<First_Sem> {
                 Subject_tile(
                   title: 'Statistics and Probability',
                   // title2: 'Paper',
-                  image_name: 'assets/images/firstsem/math.png',
+                  image_name: 'assets/images/technical/math2.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";

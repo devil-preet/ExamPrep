@@ -44,10 +44,9 @@ class _Second_SemState extends State<Second_Sem> {
                   height: mq.height * 0.06,
                 ),
 
-                //----------------------------------english---------------------------------
                 Subject_tile(
                   title: 'General English-2',
-                  image_name: 'assets/images/firstsem/eng.png',
+                  image_name: 'assets/images/technical/eng.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";

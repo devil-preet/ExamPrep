@@ -27,11 +27,7 @@ class _Third_SemState extends State<Third_Sem> {
           width: mq.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter, end: Alignment.bottomCenter,
+              colors: [Colors.blue, Colors.purple],
             ),
           ),
           child: SingleChildScrollView(
@@ -43,11 +39,9 @@ class _Third_SemState extends State<Third_Sem> {
                   width: mq.width * 0.7,
                   height: mq.height * 0.06,
                 ),
-
-                //----------------------------------english---------------------------------
                 Subject_tile(
                   title: 'English Communication \nSkills-1',
-                  image_name: 'assets/images/firstsem/engc.png',
+                  image_name: 'assets/images/technical/engc.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -55,11 +49,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //-----------------------------discrete-maths----------------------------
                 Subject_tile(
                   title: 'Descrete Maths',
-                  image_name: 'assets/images/firstsem/dmath.png',
+                  image_name: 'assets/images/technical/math2.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -67,11 +59,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------csa---------------------------------
                 Subject_tile(
                   title: 'CSOA',
-                  image_name: 'assets/images/firstsem/csa.png',
+                  image_name: 'assets/images/technical/csa.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -79,11 +69,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //-------------------------------evs----------------------------------
                 Subject_tile(
                   title: 'EVS',
-                  image_name: 'assets/images/firstsem/evs.png',
+                  image_name: 'assets/images/technical/evs.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -91,11 +79,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //---------------------------------dbms---------------------------------
                 Subject_tile(
                   title: 'DBMS',
-                  image_name: 'assets/images/firstsem/dbms.png',
+                  image_name: 'assets/images/technical/dbms.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -103,11 +89,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //---------------------------------cpp---------------------------------
                 Subject_tile(
                   title: 'OOPs uing C++',
-                  image_name: 'assets/images/firstsem/cpp.png',
+                  image_name: 'assets/images/technical/cpp.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
@@ -115,11 +99,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------punjabi---------------------------------
                 Subject_tile(
                   title: 'Punjabi',
-                  image_name: 'assets/images/firstsem/pub.png',
+                  image_name: 'assets/images/technical/pub.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -127,11 +109,9 @@ class _Third_SemState extends State<Third_Sem> {
                     Pdf_Api.openpdf(context, file);
                   },
                 ),
-
-                //----------------------------------punjabi-mudla-gyan---------------------------------
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/firstsem/pbi.png',
+                  image_name: 'assets/images/technical/pbi.png',
                   onTap: () async {
                     final url =
                         "https://previous-paper.000webhostapp.com/index.pdf";
@@ -150,12 +130,7 @@ class _Third_SemState extends State<Third_Sem> {
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
+              colors: [Colors.blue, Colors.purple],
             ),
           ),
         ),
