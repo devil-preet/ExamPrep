@@ -72,7 +72,7 @@ class _Home_PageState extends State<Home_Page> {
                   height: mq.height * 0.06,
                 ),
                 Courses_Tile(
-                    imageName: "assets/images/ug1.png",
+                    imageName: "assets/images/ug/degree.png",
                     btext: 'Click here',
                     cours_text: "Under Graduation",
                     onTap: () {
