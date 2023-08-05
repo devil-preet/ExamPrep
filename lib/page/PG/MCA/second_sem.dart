@@ -28,8 +28,8 @@ class _Second_SemState extends State<Second_Sem> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
               ], // You can change the colors here
               // begin: Alignment.topCenter, end: Alignment.bottomCenter,
             ),
@@ -43,89 +43,6 @@ class _Second_SemState extends State<Second_Sem> {
                   width: mq.width * 0.7,
                   height: mq.height * 0.06,
                 ),
-
-                Subject_tile(
-                  title: 'General English-2',
-                  image_name: 'assets/images/technical/eng.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
-
-                //-----------------------------basic math----------------------------
-                Subject_tile(
-                  title: 'Basic Maths',
-                  image_name: 'assets/images/firstsem/math.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
-
-                //---------------------------------dsa---------------------------------
-                Subject_tile(
-                  title: 'Data Structures',
-                  image_name: 'assets/images/firstsem/DSA.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
-
-                //----------------------------------digital-electronics---------------------------------
-                Subject_tile(
-                  title: 'Digital Electronics',
-                  image_name: 'assets/images/firstsem/de.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
-
-                //-------------------------------drug-abuse----------------------------------
-                Subject_tile(
-                  title: 'Drug Abuse',
-                  image_name: 'assets/images/firstsem/drug.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
-
-                //----------------------------------punjabi---------------------------------
-                Subject_tile(
-                  title: 'Punjabi',
-                  image_name: 'assets/images/firstsem/pub.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
-
-                //----------------------------------punjabi-mudla-gyan---------------------------------
-                Subject_tile(
-                  title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/firstsem/pbi.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
-                ),
               ],
             ),
           ),
@@ -138,8 +55,8 @@ class _Second_SemState extends State<Second_Sem> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
               ], // You can change the colors here
               // begin: Alignment.topCenter,
               // end: Alignment.bottomCenter,

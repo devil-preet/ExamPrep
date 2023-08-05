@@ -22,25 +22,43 @@ class _Home_PageState extends State<Home_Page> {
       SystemUiOverlayStyle(
         // Use a BoxDecoration to create a gradient color
         systemNavigationBarColor: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue, Colors.purple],
-          ),
+          gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 195, 55, 99), //redish
+            Color.fromARGB(255, 29, 37, 113),
+          ] //blueish,
+              ),
         ).color,
         systemNavigationBarIconBrightness: Brightness.light,
         systemNavigationBarDividerColor: Colors.transparent,
       ),
     );
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          "CHOOSE YOUR COURSE LEVEL",
+          style: TextStyle(fontFamily: 'font1'),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
+            ),
+          ),
+        ),
+      ),
       body: Container(
         height: mq.height,
         width: mq.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue,
-              Colors.purple
-            ], // You can change the colors here
-            // begin: Alignment.topCenter, end: Alignment.bottomCenter,
+              Color.fromARGB(255, 195, 55, 99),
+              Color.fromARGB(255, 29, 37, 113),
+            ],
           ),
         ),
         child: SafeArea(
@@ -54,8 +72,8 @@ class _Home_PageState extends State<Home_Page> {
                   height: mq.height * 0.06,
                 ),
                 Courses_Tile(
-                    imageName: "assets/images/ug.png",
-                    btext: 'click here',
+                    imageName: "assets/images/ug1.png",
+                    btext: 'Click here',
                     cours_text: "Under Graduation",
                     onTap: () {
                       Navigator.push(context,
@@ -63,7 +81,7 @@ class _Home_PageState extends State<Home_Page> {
                     }),
                 Courses_Tile(
                     imageName: "assets/images/pg.png",
-                    btext: 'click here',
+                    btext: 'Click here',
                     cours_text: "Post Graduation",
                     onTap: () {
                       Navigator.push(context,
@@ -76,7 +94,7 @@ class _Home_PageState extends State<Home_Page> {
                 ),
                 Courses_Tile(
                     imageName: "assets/images/other.png",
-                    btext: 'click here',
+                    btext: 'Click here',
                     cours_text: "PGDCA",
                     onTap: () {
                       Navigator.push(
@@ -85,22 +103,6 @@ class _Home_PageState extends State<Home_Page> {
                               builder: (context) => OtherCourses()));
                     })
               ],
-            ),
-          ),
-        ),
-      ),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("CHOOSE YOUR COURSE LEVEL"),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
             ),
           ),
         ),

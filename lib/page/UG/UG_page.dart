@@ -23,8 +23,8 @@ class _UnderGradState extends State<UnderGrad> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue,
-              Colors.purple
+              Color.fromARGB(255, 195, 55, 99), //redish
+              Color.fromARGB(255, 29, 37, 113), //blueish
             ], // You can change the colors here
             // begin: Alignment.topCenter, end: Alignment.bottomCenter,
           ),
@@ -51,23 +51,47 @@ class _UnderGradState extends State<UnderGrad> {
                   child: Row(
                     children: [
                       Program_Tile(
-                          imageName: 'assets/images/login2.png',
+                          imageName: 'assets/images/ug/bca.png',
                           program_name: 'BCA',
                           onTap: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) => BCA()));
                           }),
                       Program_Tile(
-                        imageName: 'assets/images/other.png',
-                        program_name: 'BA',
+                        imageName: 'assets/images/ug/bba.png',
+                        program_name: 'BBA',
                       ),
                       Program_Tile(
-                        imageName: 'assets/images/ug.png',
-                        program_name: 'BTECH',
+                        imageName: 'assets/images/ug/biotech.png',
+                        program_name: 'BSc (Biotech.)',
                       ),
                       Program_Tile(
-                        imageName: 'assets/images/pg.png',
+                        imageName: 'assets/images/ug/bcom.png',
                         program_name: 'BCOM',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/ug/medical.png',
+                        program_name: 'BSc (Medical)',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/ug/non_med.png',
+                        program_name: 'BSc (Non-Medical)',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/ug/maths.png',
+                        program_name: 'BSc (Maths)',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/ug/bms.png',
+                        program_name: 'BMS',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/ug/ba.png',
+                        program_name: 'BA (General)',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/ug/agriculture.png',
+                        program_name: 'BSc (Agri.)',
                       ),
                     ],
                   ),
@@ -79,13 +103,16 @@ class _UnderGradState extends State<UnderGrad> {
       ),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("CHOOSE YOUR PROGRAM"),
+        title: Text(
+          "CHOOSE YOUR PROGRAM",
+          style: TextStyle(fontFamily: 'font1'),
+        ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple
+                Color.fromARGB(255, 195, 55, 99), //redish
+                Color.fromARGB(255, 29, 37, 113), //blueish
               ], // You can change the colors here
               // begin: Alignment.topCenter,
               // end: Alignment.bottomCenter,

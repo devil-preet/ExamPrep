@@ -21,14 +21,31 @@ class _BCAState extends State<BCA> {
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          "PROGRAM - BCA",
+          style: TextStyle(fontFamily: 'font1'),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
+            ),
+          ),
+        ),
+      ),
       body: Container(
         height: mq.height,
         width: mq.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue,
-              Colors.purple
+              Color.fromARGB(255, 195, 55, 99), //redish
+              Color.fromARGB(255, 29, 37, 113), //blueish
             ], // You can change the colors here
             // begin: Alignment.topCenter, end: Alignment.bottomCenter,
           ),
@@ -110,22 +127,6 @@ class _BCAState extends State<BCA> {
                   height: 20,
                 ),
               ],
-            ),
-          ),
-        ),
-      ),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("PROGRAM - BCA"),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
             ),
           ),
         ),

@@ -22,13 +22,11 @@ class _PostGradState extends State<PostGrad> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue,
-              Colors.purple
-            ], // You can change the colors here
-            // begin: Alignment.topCenter, end: Alignment.bottomCenter,
+              Color.fromARGB(255, 195, 55, 99),
+              Color.fromARGB(255, 29, 37, 113),
+            ],
           ),
         ),
-        // ),
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -83,11 +81,9 @@ class _PostGradState extends State<PostGrad> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
             ),
           ),
         ),

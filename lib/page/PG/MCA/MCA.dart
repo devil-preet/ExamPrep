@@ -26,8 +26,8 @@ class _MCAState extends State<MCA> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue,
-              Colors.purple
+              Color.fromARGB(255, 195, 55, 99),
+              Color.fromARGB(255, 29, 37, 113),
             ], // You can change the colors here
             // begin: Alignment.topCenter, end: Alignment.bottomCenter,
           ),
@@ -107,8 +107,8 @@ class _MCAState extends State<MCA> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
               ], // You can change the colors here
               // begin: Alignment.topCenter,
               // end: Alignment.bottomCenter,

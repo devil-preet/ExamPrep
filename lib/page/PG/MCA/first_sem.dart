@@ -22,7 +22,10 @@ class _First_SemState extends State<First_Sem> {
           width: mq.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.blue, Colors.purple],
+              colors: [
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
             ),
           ),
           child: SingleChildScrollView(
@@ -36,8 +39,6 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Computer Organization \nand Architecture',
-                  // title2: 'Paper',
-
                   image_name: 'assets/images/technical/csa.png',
                   onTap: () async {
                     final url =
@@ -48,7 +49,6 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Data Structures & \nAlgorithms',
-                  // title2: 'Paper',
                   image_name: 'assets/images/technical/dsa.png',
                   onTap: () async {
                     final url =
@@ -59,7 +59,6 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'OOps using C++',
-                  // title2: 'Paper',
                   image_name: 'assets/images/technical/cpp.png',
                   onTap: () async {
                     final url =
@@ -70,7 +69,6 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Statistics and Probability',
-                  // title2: 'Paper',
                   image_name: 'assets/images/technical/math2.png',
                   onTap: () async {
                     final url =
@@ -91,11 +89,9 @@ class _First_SemState extends State<First_Sem> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
             ),
           ),
         ),

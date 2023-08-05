@@ -19,13 +19,33 @@ class _Fourth_SemState extends State<Fourth_Sem> {
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          "BCA - 4TH SEMESTER",
+          style: TextStyle(fontFamily: 'font1'),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
+            ),
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Container(
           height: mq.height,
           width: mq.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.blue, Colors.purple],
+              colors: [
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
+              ],
             ),
           ),
           child: SingleChildScrollView(
@@ -108,22 +128,6 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                   },
                 ),
               ],
-            ),
-          ),
-        ),
-      ),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("BCA - 4TH SEMESTER"),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.purple
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
             ),
           ),
         ),

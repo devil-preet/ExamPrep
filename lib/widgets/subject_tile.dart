@@ -32,8 +32,8 @@ class Subject_tile extends StatelessWidget {
             ],
             gradient: LinearGradient(
                 colors: [
-                  Colors.blue,
-                  Colors.purple,
+                  Color.fromARGB(255, 195, 55, 99), //redish
+                  Color.fromARGB(255, 29, 37, 113), //blueish
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -55,15 +55,11 @@ class Subject_tile extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontFamily: 'font1'),
                     ),
-                    // SizedBox(
-                    //   height: 5,
-                    // ),
-                    // Text(
-                    //   title2,
-                    //   style: TextStyle(color: Colors.white, fontSize: 22),
-                    // ),
                   ],
                 )
               ],
@@ -81,7 +77,10 @@ class Subject_tile extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Click To Get',
-                    style: TextStyle(color: Colors.blue.shade900, fontSize: 15),
+                    style: TextStyle(
+                        color: Colors.blue.shade900,
+                        fontSize: 15,
+                        fontFamily: 'font1'),
                   ),
                 ),
               ),

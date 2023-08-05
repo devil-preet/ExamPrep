@@ -27,8 +27,8 @@ class Up_Banner extends StatelessWidget {
               ),
             ],
             gradient: LinearGradient(colors: [
-              Colors.purple,
-              Colors.blue,
+              Color.fromARGB(255, 29, 37, 113), //blueish
+              Color.fromARGB(255, 195, 55, 99), //redish
             ]),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20),
@@ -38,7 +38,10 @@ class Up_Banner extends StatelessWidget {
           child: Text(
             labal,
             style: TextStyle(
-                fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),
+                fontSize: 23,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'font1'),
           ),
         ),
       ),

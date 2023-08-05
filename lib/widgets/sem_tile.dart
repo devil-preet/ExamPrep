@@ -33,8 +33,8 @@ class Semester_tile extends StatelessWidget {
             ],
             gradient: LinearGradient(
                 colors: [
-                  Colors.purple,
-                  Colors.blue,
+                  Color.fromARGB(255, 29, 37, 113), //blueish
+                  Color.fromARGB(255, 195, 55, 99), //redish
                 ],
                 // begin: Alignment.topCenter,
                 // end: Alignment.bottomCenter,
@@ -61,13 +61,16 @@ class Semester_tile extends StatelessWidget {
               height: mq.height * 0.07,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                      colors: [
-                        Colors.purple.shade400,
-                        Colors.blue.shade200,
-                      ],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      stops: [0.01, 2.0]),
+                    colors: [
+                      Color.fromARGB(255, 195, 55, 99),
+                      Color.fromARGB(255, 29, 37, 113),
+
+                      Color.fromARGB(255, 195, 55, 99), //redish
+                    ],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                  // stops: [0.01, 2.0]),
                   borderRadius: BorderRadius.circular(5)),
             ),
             SizedBox(
@@ -75,7 +78,8 @@ class Semester_tile extends StatelessWidget {
             ),
             Text(
               sem_name,
-              style: TextStyle(fontSize: 20, color: Colors.white),
+              style: TextStyle(
+                  fontSize: 20, color: Colors.white, fontFamily: 'font1'),
             )
           ]),
         ),

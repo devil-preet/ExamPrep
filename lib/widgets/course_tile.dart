@@ -31,8 +31,8 @@ class Courses_Tile extends StatelessWidget {
             ],
             gradient: LinearGradient(
                 colors: [
-                  Colors.blue,
-                  Colors.purple,
+                  Color.fromARGB(255, 195, 55, 99), //redish
+                  Color.fromARGB(255, 29, 37, 113), //blueish
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -52,21 +52,21 @@ class Courses_Tile extends StatelessWidget {
                       DecorationImage(image: AssetImage(imageName.toString())),
                   borderRadius: BorderRadius.circular(100)),
             ),
-            Container(
-              height: mq.height * 0.20,
-              width: mq.width * 0.009,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                gradient: LinearGradient(
-                    colors: [
-                      Colors.purple.shade300,
-                      Colors.blue.shade200,
-                    ],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    stops: [0.01, 2.0]),
-              ),
-            ),
+            // Container(
+            //   height: mq.height * 0.20,
+            //   width: mq.width * 0.009,
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(20),
+            //     gradient: LinearGradient(
+            //         colors: [
+            //           Color.fromARGB(255, 29, 37, 113), //blueish
+            //           Color.fromARGB(255, 195, 55, 99), //redish
+            //         ],
+            //         begin: Alignment.topCenter,
+            //         end: Alignment.bottomCenter,
+            //         stops: [0.01, 2.0]),
+            //   ),
+            // ),
             SizedBox(
               width: mq.width * 0.05,
             ),
@@ -77,20 +77,11 @@ class Courses_Tile extends StatelessWidget {
                   cours_text,
                   maxLines: 2,
                   style: TextStyle(
-                    color: Color.fromARGB(255, 253, 249, 233),
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      color: Color.fromARGB(255, 253, 249, 233),
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'font1'),
                 ),
-                // Text(
-                //   "Paper",
-                //   maxLines: 2,
-                //   style: TextStyle(
-                //     color: Color.fromARGB(255, 253, 249, 233),
-                //     fontSize: 22,
-                //     fontWeight: FontWeight.bold,
-                //   ),
-                // ),
                 GestureDetector(
                   onTap: onTap,
                   child: Container(
@@ -105,7 +96,8 @@ class Courses_Tile extends StatelessWidget {
                         style: TextStyle(
                             color: Colors.blue.shade900,
                             fontSize: 17,
-                            fontWeight: FontWeight.w500),
+                            fontWeight: FontWeight.w500,
+                            fontFamily: 'font1'),
                       ),
                     ),
                   ),

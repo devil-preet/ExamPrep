@@ -30,8 +30,8 @@ class Program_Tile extends StatelessWidget {
           ],
           gradient: LinearGradient(
               colors: [
-                Colors.blue,
-                Colors.purple,
+                Color.fromARGB(255, 195, 55, 99),
+                Color.fromARGB(255, 29, 37, 113),
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -57,29 +57,30 @@ class Program_Tile extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.white,
-                    fontWeight: FontWeight.w500),
+                    fontWeight: FontWeight.w500,
+                    fontFamily: 'font1'),
               ),
               SizedBox(
                 height: 15,
               ),
-              Text(
-                'Get previous year question-papers of ${program_name.toLowerCase()}',
-                style: TextStyle(
-                  fontSize: 15,
-                  color: Colors.white,
-                  // fontWeight: FontWeight.w500
-                ),
-              ),
-              SizedBox(
-                height: 25,
-              ),
+              // Text(
+              //   'Get previous year question-papers of ${program_name.toLowerCase()}',
+              //   style: TextStyle(
+              //       fontSize: 15,
+              //       color: Colors.white,
+              //       fontWeight: FontWeight.w500,
+              //       fontFamily: 'font1'),
+              // ),
+              // SizedBox(
+              //   height: 25,
+              // ),
               GestureDetector(
                 onTap: onTap,
                 child: Container(
                   width: 200,
                   height: 55,
                   decoration: BoxDecoration(
-                      color: Color(0xFFFFF0F0),
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(50)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -93,11 +94,12 @@ class Program_Tile extends StatelessWidget {
                         width: 3,
                       ),
                       Text(
-                        'choose semester',
+                        'Choose semester',
                         style: TextStyle(
                             color: Colors.blue.shade900,
                             fontSize: 18,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'font1'),
                       ),
                     ],
                   ),
