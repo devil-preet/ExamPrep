@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pup_prep/api_pdf/pdf_api.dart';
 import 'package:pup_prep/main.dart';
 import 'package:pup_prep/page/OTHERS/Other_courses.dart';
 import 'package:pup_prep/page/PG/PG_page.dart';
@@ -34,7 +37,7 @@ class _Home_PageState extends State<Home_Page> {
     );
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
+        //centerTitle: true,
         title: Text(
           "CHOOSE YOUR COURSE LEVEL",
           style: TextStyle(fontFamily: 'font1'),
@@ -66,10 +69,37 @@ class _Home_PageState extends State<Home_Page> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Up_Banner(
-                  labal: 'COURSES',
-                  width: mq.width * 0.6,
-                  height: mq.height * 0.06,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Up_Banner(
+                      labal: 'COURSES',
+                      width: mq.width * 0.6,
+                      height: mq.height * 0.06,
+                    ),
+                    ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xFFFFF0F0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                        ),
+                        onPressed: () async {
+                          File? file = await Pdf_Api.pickfile();
+                            Pdf_Api.openpdf(context, file!);
+                        },
+                        child: Text(
+                          'OPEN PDF',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontFamily: 'font2',
+                            color: Colors.blue.shade900,
+                          ),
+                        )),
+                    SizedBox(
+                      width: 5,
+                    ),
+                  ],
                 ),
                 Courses_Tile(
                     imageName: "assets/images/ug1.png",

@@ -18,74 +18,98 @@ class Subject_tile extends StatelessWidget {
     mq = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-      child: Container(
-        width: mq.width,
-        height: mq.height * 0.23,
-        decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Color(0xFF000000),
-                offset: Offset(6.0, 6.0),
-                spreadRadius: 2.0,
-                blurRadius: 10.0,
-              ),
-            ],
-            gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 195, 55, 99), //redish
-                  Color.fromARGB(255, 29, 37, 113), //blueish
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [0.1, 6.0]),
-            borderRadius: BorderRadius.circular(15)),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Row(
-              children: [
-                Container(
+      child: Material(
+        elevation: 5,
+        borderRadius: BorderRadius.circular(30),
+        child: Container(
+          width: mq.width,
+          height: mq.height * 0.20,
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 195, 55, 99), //redish
+                    Color.fromARGB(255, 29, 37, 113), //blueish
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  stops: [0.1, 6.0]),
+              borderRadius: BorderRadius.circular(30)),
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 5),
+                child: Container(
                   width: mq.width * 0.3,
                   height: mq.height * 0.15,
                   decoration: BoxDecoration(
                       image: DecorationImage(image: AssetImage(image_name))),
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      title,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontFamily: 'font1'),
-                    ),
-                  ],
-                )
-              ],
-            ),
-            GestureDetector(
-              onTap: onTap,
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 90),
-                width: 120,
-                height: 40,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  color: Colors.white,
-                ),
-                child: Center(
-                  child: Text(
-                    'Click To Get',
-                    style: TextStyle(
-                        color: Colors.blue.shade900,
-                        fontSize: 15,
-                        fontFamily: 'font1'),
-                  ),
-                ),
               ),
-            ),
-          ],
+              SizedBox(
+                width: 10,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                        color: Colors.white, fontSize: 20, fontFamily: 'font1'),
+                  ),
+                  Row(
+                    children: [
+                      Material(
+                        elevation: 5,
+                        borderRadius: BorderRadius.circular(100),
+                        child: GestureDetector(
+                          onTap: onTap,
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 10),
+                            width: 100,
+                            height: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: Colors.white,
+                            ),
+                            child: Center(
+                              child: Text(
+                                'Click To Get',
+                                style: TextStyle(
+                                    color: Colors.blue.shade900,
+                                    fontSize: 15,
+                                    fontFamily: 'font1'),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Material(
+                        elevation: 5,
+                        borderRadius: BorderRadius.circular(100),
+                        child: Container(
+                          width: 45,
+                          height: 45,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.white,
+                          ),
+                          child: Icon(
+                            Icons.download,
+                            color: Colors.blue.shade900,
+                            size: 30,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );

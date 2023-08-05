@@ -22,7 +22,6 @@ class _BCAState extends State<BCA> {
     mq = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         title: Text(
           "PROGRAM - BCA",
           style: TextStyle(fontFamily: 'font1'),

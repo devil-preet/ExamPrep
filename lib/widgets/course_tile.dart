@@ -17,94 +17,88 @@ class Courses_Tile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-      child: Container(
-        width: mq.width,
-        height: mq.height * 0.25,
-        decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Color(0xFF000000),
-                offset: Offset(6.0, 6.0),
-                spreadRadius: 2.0,
-                blurRadius: 10.0,
+      child: Material(
+        elevation: 10,
+        borderRadius: BorderRadius.circular(35),
+        child: Container(
+          width: mq.width,
+          height: mq.height * 0.20,
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [
+                    Color(0xFFC33763), //redish
+                    Color(0xFF1D2571), //blueish
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  stops: [0.01, 2.0]),
+              borderRadius: BorderRadius.circular(35)),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 35),
+                width: mq.width * 0.32,
+                height: mq.height * 0.15,
+                decoration: BoxDecoration(
+                    //color: Colors.white,
+                    image: DecorationImage(
+                        image: AssetImage(imageName.toString())),
+                    borderRadius: BorderRadius.circular(100)),
               ),
-            ],
-            gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 195, 55, 99), //redish
-                  Color.fromARGB(255, 29, 37, 113), //blueish
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [0.01, 2.0]),
-            borderRadius: BorderRadius.circular(15)),
-        child: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 35),
-              width: mq.width * 0.32,
-              height: mq.height * 0.15,
-              decoration: BoxDecoration(
-                  //color: Colors.white,
-                  image:
-                      DecorationImage(image: AssetImage(imageName.toString())),
-                  borderRadius: BorderRadius.circular(100)),
-            ),
-            // Container(
-            //   height: mq.height * 0.20,
-            //   width: mq.width * 0.009,
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(20),
-            //     gradient: LinearGradient(
-            //         colors: [
-            //           Color.fromARGB(255, 29, 37, 113), //blueish
-            //           Color.fromARGB(255, 195, 55, 99), //redish
-            //         ],
-            //         begin: Alignment.topCenter,
-            //         end: Alignment.bottomCenter,
-            //         stops: [0.01, 2.0]),
-            //   ),
-            // ),
-            SizedBox(
-              width: mq.width * 0.05,
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(
-                  cours_text,
-                  maxLines: 2,
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 253, 249, 233),
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'font1'),
+              Material(
+                elevation: 5,
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  height: mq.height * 0.15,
+                  width: mq.width * 0.009,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color.fromARGB(255, 255, 255, 233)),
                 ),
-                GestureDetector(
-                  onTap: onTap,
-                  child: Container(
-                    width: 120,
-                    height: 40,
-                    decoration: BoxDecoration(
-                        color: Color(0xFFFFF0F0),
-                        borderRadius: BorderRadius.circular(15)),
-                    child: Center(
-                      child: Text(
-                        btext,
-                        style: TextStyle(
-                            color: Colors.blue.shade900,
-                            fontSize: 17,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'font1'),
+              ),
+              SizedBox(
+                width: mq.width * 0.05,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    cours_text,
+                    maxLines: 2,
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 253, 249, 233),
+                        fontSize: 23,
+                        fontFamily: 'font1'),
+                  ),
+                  GestureDetector(
+                    onTap: onTap,
+                    child: Material(
+                      elevation: 10,
+                      borderRadius: BorderRadius.circular(50),
+                      child: Container(
+                        width: 120,
+                        height: 45,
+                        decoration: BoxDecoration(
+                            color: Color(0xFFFFF0F0),
+                            borderRadius: BorderRadius.circular(50)),
+                        child: Center(
+                          child: Text(
+                            btext,
+                            style: TextStyle(
+                                color: Colors.blue.shade900,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                fontFamily: 'font2'),
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
-          ],
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
