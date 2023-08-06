@@ -1,8 +1,4 @@
-// ignore_for_file: unused_import
-
 import 'package:flutter/material.dart';
-
-import '../../../api_pdf/pdf_api.dart';
 import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
@@ -60,72 +56,37 @@ class _Fifth_SemState extends State<Fifth_Sem> {
                 Subject_tile(
                   title: 'English Litrary Skills-1',
                   image_name: 'assets/images/technical/eng.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'System Analysis & \nDesign',
                   image_name: 'assets/images/technical/sad.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'System Software',
                   image_name: 'assets/images/technical/ss.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Java Programming',
                   image_name: 'assets/images/technical/java.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Web Designing Using \nHTML & DHTML',
                   image_name: 'assets/images/technical/html.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi',
                   image_name: 'assets/images/technical/pub.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
                   image_name: 'assets/images/technical/pbi.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
               ],
             ),

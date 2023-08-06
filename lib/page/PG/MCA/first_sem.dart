@@ -40,42 +40,22 @@ class _First_SemState extends State<First_Sem> {
                 Subject_tile(
                   title: 'Computer Organization \nand Architecture',
                   image_name: 'assets/images/technical/csa.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Data Structures & \nAlgorithms',
                   image_name: 'assets/images/technical/dsa.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'OOps using C++',
                   image_name: 'assets/images/technical/cpp.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Statistics and Probability',
                   image_name: 'assets/images/technical/math2.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
               ],
             ),

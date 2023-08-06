@@ -60,72 +60,37 @@ class _Second_SemState extends State<Second_Sem> {
                 Subject_tile(
                   title: 'General English-2',
                   image_name: 'assets/images/technical/eng.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Basic Maths',
                   image_name: 'assets/images/technical/math1.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Data Structures',
                   image_name: 'assets/images/technical/dsa.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Digital Electronics',
                   image_name: 'assets/images/technical/de.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Drug Abuse',
+                  onTap: () {},
                   image_name: 'assets/images/technical/drug.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
                 ),
                 Subject_tile(
                   title: 'Punjabi',
                   image_name: 'assets/images/technical/pub.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
                   image_name: 'assets/images/technical/pbi.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
               ],
             ),

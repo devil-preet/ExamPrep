@@ -60,82 +60,42 @@ class _Third_SemState extends State<Third_Sem> {
                 Subject_tile(
                   title: 'English Communication \nSkills-1',
                   image_name: 'assets/images/technical/engc.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Descrete Maths',
                   image_name: 'assets/images/technical/math2.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'CSOA',
                   image_name: 'assets/images/technical/csa.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'EVS',
                   image_name: 'assets/images/technical/evs.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'DBMS',
                   image_name: 'assets/images/technical/dbms.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'OOPs uing C++',
                   image_name: 'assets/images/technical/cpp.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi',
                   image_name: 'assets/images/technical/pub.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
                   image_name: 'assets/images/technical/pbi.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
               ],
             ),

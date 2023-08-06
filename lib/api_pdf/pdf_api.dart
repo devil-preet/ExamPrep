@@ -29,7 +29,7 @@ class Pdf_Api {
     if (result == null) return null;
     return File(result.paths.first!);
   }
- static void openpdf(BuildContext context, File file) => Navigator.push(
-    context, MaterialPageRoute(builder: (context) => PdfView_Page(file: file)));
+//  static void openpdf(BuildContext context, File file) => Navigator.push(
+//     context, MaterialPageRoute(builder: (context) => PDFScreen(filename: file)));
 
 }

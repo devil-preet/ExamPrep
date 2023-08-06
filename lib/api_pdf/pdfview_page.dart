@@ -1,21 +1,56 @@
 import 'dart:io';
-import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'package:path/path.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
-class PdfView_Page extends StatefulWidget {
-   PdfView_Page({super.key, required this.file});
-   final File file;
+class PDFScreen extends StatefulWidget {
+  String filename;
+  PDFScreen({Key? key, required this.filename}) : super(key: key);
 
   @override
-  State<PdfView_Page> createState() => _PdfView_PageState();
+  _PDFScreenState createState() => _PDFScreenState();
 }
 
-class _PdfView_PageState extends State<PdfView_Page> {
+class _PDFScreenState extends State<PDFScreen> {
+  String? _pdfPath;
+
+  @override
+  void initState() {
+    super.initState();
+    _downloadPdf();
+  }
+
+  Future<void> _downloadPdf() async {
+    final pdfUrl = await FirebaseStorage.instance
+        .ref('pdfs/${widget.filename}.pdf')
+        .getDownloadURL();
+
+        print(pdfUrl);
+
+    final pdfBytes =
+        await FirebaseStorage.instance.refFromURL(pdfUrl).getData();
+
+    final tempDir = await getTemporaryDirectory();
+    final pdfFile = File('${tempDir.path}/file.pdf');
+    await pdfFile.writeAsBytes(pdfBytes?.toList() ?? []);
+
+    if (mounted) {
+      setState(() {
+        _pdfPath = pdfFile.path;
+      });
+    }
+
+    print("PDF Path=> ${_pdfPath}");
+  }
+
   @override
   Widget build(BuildContext context) {
-    return PDFView(
-      filePath:widget.file.path ,
-    );
+    return Scaffold(
+        body: _pdfPath == null
+            ? Center(child: CircularProgressIndicator())
+            : PDFView(
+                filePath: _pdfPath,
+              ));
   }
 }

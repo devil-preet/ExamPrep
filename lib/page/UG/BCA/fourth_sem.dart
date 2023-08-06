@@ -60,72 +60,37 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                 Subject_tile(
                   title: 'English Communication \nSkills-2',
                   image_name: 'assets/images/technical/eng.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'CONSM (Maths)',
                   image_name: 'assets/images/technical/math2.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Management Information \nSystem',
                   image_name: 'assets/images/technical/mis.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Computer Natworks',
                   image_name: 'assets/images/technical/cn.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/PROGRAMMING%20FUNDAMENTALS%20USING%20C%20BCAQ.%20PAPERS.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'RDBMS',
                   image_name: 'assets/images/technical/dbms.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi',
                   image_name: 'assets/images/technical/pub.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
                   image_name: 'assets/images/technical/pbi.png',
-                  onTap: () async {
-                    final url =
-                        "https://previous-paper.000webhostapp.com/index.pdf";
-                    final file = await Pdf_Api.loadnetwork(url);
-                    Pdf_Api.openpdf(context, file);
-                  },
+                  onTap: () {},
                 ),
               ],
             ),
