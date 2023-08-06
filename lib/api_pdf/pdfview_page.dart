@@ -6,7 +6,14 @@ import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class PDFScreen extends StatefulWidget {
   String filename;
-  PDFScreen({Key? key, required this.filename}) : super(key: key);
+  String course;
+  String sem;
+  PDFScreen(
+      {Key? key,
+      required this.filename,
+      required this.course,
+      required this.sem})
+      : super(key: key);
 
   @override
   _PDFScreenState createState() => _PDFScreenState();
@@ -23,10 +30,10 @@ class _PDFScreenState extends State<PDFScreen> {
 
   Future<void> _downloadPdf() async {
     final pdfUrl = await FirebaseStorage.instance
-        .ref('pdfs/${widget.filename}.pdf')
+        .ref('pdfs/${widget.course}/${widget.sem}/${widget.filename}.pdf')
         .getDownloadURL();
 
-        print(pdfUrl);
+    print(pdfUrl);
 
     final pdfBytes =
         await FirebaseStorage.instance.refFromURL(pdfUrl).getData();
