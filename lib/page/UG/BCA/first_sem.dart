@@ -68,16 +68,25 @@ class _First_SemState extends State<First_Sem> {
                   },
                 ),
                 Subject_tile(
+<<<<<<< Updated upstream
                   title: 'Fundametals Of  IT',
+=======
+                  title: 'Fundamentals of IT',
+>>>>>>> Stashed changes
                   image_name: 'assets/images/technical/IT.png',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< Updated upstream
                             builder: (context) => PDFScreen(
                                 course: 'BCA',
                                 sem: 'Sem1',
                                 filename: 'it-sem1')));
+=======
+                            builder: (context) =>
+                                PDFScreen(filename: 'it-sem1')));
+>>>>>>> Stashed changes
                   },
                 ),
                 Subject_tile(
@@ -87,10 +96,15 @@ class _First_SemState extends State<First_Sem> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< Updated upstream
                             builder: (context) => PDFScreen(
                                 course: 'BCA',
                                 sem: 'Sem1',
                                 filename: 'oa-sem1')));
+=======
+                            builder: (context) =>
+                                PDFScreen(filename: 'oa-sem1')));
+>>>>>>> Stashed changes
                   },
                 ),
                 Subject_tile(
@@ -100,16 +114,31 @@ class _First_SemState extends State<First_Sem> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< Updated upstream
                             builder: (context) => PDFScreen(
                                 course: 'BCA',
                                 sem: 'Sem1',
                                 filename: 'c-sem1')));
+=======
+                            builder: (context) =>
+                                PDFScreen(filename: 'c-sem1')));
+>>>>>>> Stashed changes
                   },
                 ),
                 Subject_tile(
                   title: 'Punjabi',
                   image_name: 'assets/images/technical/pub.png',
+<<<<<<< Updated upstream
                   onTap: () {},
+=======
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                PDFScreen(filename: 'it-sem1')));
+                  },
+>>>>>>> Stashed changes
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
@@ -118,10 +147,15 @@ class _First_SemState extends State<First_Sem> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< Updated upstream
                             builder: (context) => PDFScreen(
                                 course: 'BCA',
                                 sem: 'Sem1',
                                 filename: 'PUNJABI MUDLA GYAN')));
+=======
+                            builder: (context) =>
+                                PDFScreen(filename: 'it-sem1')));
+>>>>>>> Stashed changes
                   },
                 ),
               ],
