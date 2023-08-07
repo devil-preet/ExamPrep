@@ -58,7 +58,7 @@ class _Third_SemState extends State<Third_Sem> {
                   height: mq.height * 0.06,
                 ),
                 Subject_tile(
-                  title: 'English Communication \nSkills-1',
+                  title: 'English Communi-\ncation Skills-1',
                   image_name: 'assets/images/technical/engc.png',
                   onTap: () {},
                 ),
