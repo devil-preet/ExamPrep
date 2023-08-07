@@ -61,19 +61,23 @@ class _First_SemState extends State<First_Sem> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                PDFScreen(course: 'BCA',sem: 'Sem1',filename: 'GENERAL ENGLISH')));
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem1',
+                                filename: 'GENERAL ENGLISH')));
                   },
                 ),
                 Subject_tile(
-                  title: 'Fundametals Of - \nInformation Technology',
+                  title: 'Fundametals Of  IT',
                   image_name: 'assets/images/technical/IT.png',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                PDFScreen(course: 'BCA',sem: 'Sem1',filename: 'it-sem1')));
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem1',
+                                filename: 'it-sem1')));
                   },
                 ),
                 Subject_tile(
@@ -83,26 +87,29 @@ class _First_SemState extends State<First_Sem> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                PDFScreen(course: 'BCA',sem: 'Sem1',filename: 'oa-sem1')));
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem1',
+                                filename: 'oa-sem1')));
                   },
                 ),
                 Subject_tile(
-                  title: 'Programming - \nFundamentals Using C',
+                  title: 'Programming Funda-\nmentals Using C',
                   image_name: 'assets/images/technical/C.png',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                PDFScreen(course: 'BCA',sem: 'Sem1',filename: 'c-sem1')));
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem1',
+                                filename: 'c-sem1')));
                   },
                 ),
                 Subject_tile(
                   title: 'Punjabi',
                   image_name: 'assets/images/technical/pub.png',
-                  onTap: () {
-                  },
+                  onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
@@ -111,8 +118,10 @@ class _First_SemState extends State<First_Sem> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                PDFScreen(course: 'BCA',sem: 'Sem1',filename: 'PUNJABI MUDLA GYAN')));
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem1',
+                                filename: 'PUNJABI MUDLA GYAN')));
                   },
                 ),
               ],

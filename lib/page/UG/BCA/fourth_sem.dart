@@ -68,7 +68,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                   onTap: () {},
                 ),
                 Subject_tile(
-                  title: 'Management Information \nSystem',
+                  title: 'Management Infor-\nmation System',
                   image_name: 'assets/images/technical/mis.png',
                   onTap: () {},
                 ),

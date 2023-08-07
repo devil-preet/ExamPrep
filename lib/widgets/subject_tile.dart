@@ -55,7 +55,7 @@ class Subject_tile extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                        color: Colors.white, fontSize: 20, fontFamily: 'font1'),
+                        color: Colors.white, fontSize: 21, fontFamily: 'font1'),
                   ),
                   Row(
                     children: [
