@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:pup_prep/api_pdf/pdfview_page.dart';
 
 import '../../../api_pdf/pdf_api.dart';
 import '../../../main.dart';
@@ -60,17 +61,41 @@ class _Third_SemState extends State<Third_Sem> {
                 Subject_tile(
                   title: 'English Communication \nSkills-1',
                   image_name: 'assets/images/technical/engc.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem3',
+                                filename: 'english-sem3')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Descrete Maths',
                   image_name: 'assets/images/technical/math2.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem3',
+                                filename: 'math-sem3')));
+                  },
                 ),
                 Subject_tile(
                   title: 'CSOA',
                   image_name: 'assets/images/technical/csa.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem3',
+                                filename: 'csoa-sem3')));
+                  },
                 ),
                 Subject_tile(
                   title: 'EVS',
@@ -80,12 +105,28 @@ class _Third_SemState extends State<Third_Sem> {
                 Subject_tile(
                   title: 'DBMS',
                   image_name: 'assets/images/technical/dbms.png',
-                  onTap: () {},
+                  onTap: () {
+                                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem3',
+                                filename: 'dbms-sem3')));
+                  },
                 ),
                 Subject_tile(
                   title: 'OOPs uing C++',
                   image_name: 'assets/images/technical/cpp.png',
-                  onTap: () {},
+                  onTap: () {
+                                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem3',
+                                filename: 'c++-sem3')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Punjabi',

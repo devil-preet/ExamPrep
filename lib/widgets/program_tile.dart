@@ -13,6 +13,7 @@ class Program_Tile extends StatelessWidget {
   Function()? onTap;
   @override
   Widget build(BuildContext context) {
+    mq = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: Material(
@@ -75,28 +76,30 @@ class Program_Tile extends StatelessWidget {
                       elevation: 5,
                       borderRadius: BorderRadius.circular(50),
                       child: Container(
-                        width: 50,
-                        height: 50,
+                        width: mq.width * 0.125,
+                        height: mq.height * 0.06,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
                           color: Colors.white,
                         ),
-                        child:  Icon(
-                                Icons.arrow_forward_outlined,
-                                color: Colors.blue.shade900,
-                                size: 30,
-                              ),
+                        child: Icon(
+                          Icons.arrow_forward_outlined,
+                          color: Colors.blue.shade900,
+                          size: 30,
+                        ),
                       ),
                     ),
-                    SizedBox(width: mq.width*0.015,),
+                    SizedBox(
+                      width: mq.width * 0.015,
+                    ),
                     GestureDetector(
                       onTap: onTap,
                       child: Material(
                         elevation: 10,
                         borderRadius: BorderRadius.circular(50),
                         child: Container(
-                          width: 150,
-                          height: 50,
+                          width: mq.width * 0.36,
+                          height: mq.height * 0.06,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(50)),
