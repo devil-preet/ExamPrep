@@ -68,7 +68,7 @@ class _First_SemState extends State<First_Sem> {
                   },
                 ),
                 Subject_tile(
-                  title: 'Fundametals Of  IT',
+                  title: 'Fundamentals of IT',
                   image_name: 'assets/images/technical/IT.png',
                   onTap: () {
                     Navigator.push(

@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:pup_prep/api_pdf/pdfview_page.dart';
 
 import '../../../api_pdf/pdf_api.dart';
 import '../../../main.dart';
@@ -65,17 +66,37 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                 Subject_tile(
                   title: 'CONSM (Maths)',
                   image_name: 'assets/images/technical/math2.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem4',
+                                filename: 'COS math')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Management Infor-\nmation System',
                   image_name: 'assets/images/technical/mis.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA', sem: 'Sem4', filename: 'MIS')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Computer Natworks',
                   image_name: 'assets/images/technical/cn.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA', sem: 'Sem4', filename: 'CN')));
+                  },
                 ),
                 Subject_tile(
                   title: 'RDBMS',

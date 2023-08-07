@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pup_prep/api_pdf/pdfview_page.dart';
 import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
@@ -61,22 +62,50 @@ class _Fifth_SemState extends State<Fifth_Sem> {
                 Subject_tile(
                   title: 'System Analysis & \nDesign',
                   image_name: 'assets/images/technical/sad.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA', sem: 'Sem5', filename: 'SAD')));
+                  },
                 ),
                 Subject_tile(
                   title: 'System Software',
                   image_name: 'assets/images/technical/ss.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA', sem: 'Sem5', filename: 'SYS')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Java Programming',
                   image_name: 'assets/images/technical/java.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem5',
+                                filename: 'Java')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Web Designing Using \nHTML & DHTML',
                   image_name: 'assets/images/technical/html.png',
-                  onTap: () {},
+                  onTap: () {
+                                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem5',
+                                filename: 'HTML')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Punjabi',
