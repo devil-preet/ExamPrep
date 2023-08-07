@@ -58,7 +58,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                   height: mq.height * 0.06,
                 ),
                 Subject_tile(
-                  title: 'English Communication \nSkills-2',
+                  title: 'English Communi-\ncation Skills-2',
                   image_name: 'assets/images/technical/eng.png',
                   onTap: () {},
                 ),
@@ -68,7 +68,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                   onTap: () {},
                 ),
                 Subject_tile(
-                  title: 'Management Information \nSystem',
+                  title: 'Management Infor-\nmation System',
                   image_name: 'assets/images/technical/mis.png',
                   onTap: () {},
                 ),

@@ -58,7 +58,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                   height: mq.height * 0.06,
                 ),
                 Subject_tile(
-                  title: 'English Litrary Skills-2',
+                  title: 'English Litrary \nSkills-2',
                   image_name: 'assets/images/technical/eng.png',
                   onTap: () {},
                 ),

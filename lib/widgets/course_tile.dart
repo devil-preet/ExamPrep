@@ -68,7 +68,7 @@ class Courses_Tile extends StatelessWidget {
                     maxLines: 2,
                     style: TextStyle(
                         color: Color.fromARGB(255, 253, 249, 233),
-                        fontSize: 23,
+                        fontSize: 20,
                         fontFamily: 'font1'),
                   ),
                   GestureDetector(
