@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pup_prep/api_pdf/pdf_api.dart';
 import 'package:pup_prep/main.dart';
 import 'package:pup_prep/page/OTHERS/Other_courses.dart';
 import 'package:pup_prep/page/PG/PG_page.dart';

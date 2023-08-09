@@ -1,10 +1,8 @@
 import 'package:file_picker/file_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 import 'dart:io';
-import 'package:pup_prep/api_pdf/pdfview_page.dart';
 
 class Pdf_Api {
   static Future<File> loadnetwork(String url) async {

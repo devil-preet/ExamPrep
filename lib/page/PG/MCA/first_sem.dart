@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pup_prep/api_pdf/pdf_api.dart';
 import 'package:pup_prep/main.dart';
 import 'package:pup_prep/widgets/subject_tile.dart';
 import 'package:pup_prep/widgets/up_banner.dart';
