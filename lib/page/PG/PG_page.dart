@@ -56,7 +56,11 @@ class _PostGradState extends State<PostGrad> {
                           }),
                       Program_Tile(
                         imageName: 'assets/images/other.png',
-                        program_name: 'MA',
+                        program_name: 'MA(English)',
+                      ),
+                      Program_Tile(
+                        imageName: 'assets/images/other.png',
+                        program_name: 'MA(History)',
                       ),
                       Program_Tile(
                         imageName: 'assets/images/ug.png',
