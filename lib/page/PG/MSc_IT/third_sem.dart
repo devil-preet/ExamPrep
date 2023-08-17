@@ -7,21 +7,19 @@ import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
 
-class Fourth_Sem extends StatefulWidget {
-  const Fourth_Sem({super.key});
+class Third_Sem extends StatefulWidget {
+  const Third_Sem({super.key});
 
   @override
-  State<Fourth_Sem> createState() => _Fourth_SemState();
+  State<Third_Sem> createState() => _Third_SemState();
 }
 
-class _Fourth_SemState extends State<Fourth_Sem> {
+class _Third_SemState extends State<Third_Sem> {
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
-        // backgroundColor: Color(0xFF394348),
-
         child: Container(
           height: mq.height,
           width: mq.width,
@@ -30,8 +28,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
               colors: [
                 Color.fromARGB(255, 195, 55, 99),
                 Color.fromARGB(255, 29, 37, 113),
-              ], // You can change the colors here
-              // begin: Alignment.topCenter, end: Alignment.bottomCenter,
+              ],
             ),
           ),
           child: SingleChildScrollView(
@@ -50,7 +47,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
       ),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("MCA - 4TH SEMESTER"),
+        title: Text("BCA - 3rd SEMESTER"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(

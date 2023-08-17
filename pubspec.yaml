@@ -76,6 +76,7 @@ flutter:
     - assets/images/sem/
     - assets/images/technical/
     - assets/images/ug/
+    - assets/images/pg/
     - assets/images/appicon/
 
   #   - images/a_dot_ham.jpeg

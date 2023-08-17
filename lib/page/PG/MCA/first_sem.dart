@@ -37,7 +37,7 @@ class _First_SemState extends State<First_Sem> {
                   height: mq.height * 0.06,
                 ),
                 Subject_tile(
-                  title: 'Computer Organization \nand Architecture',
+                  title: 'COA',
                   image_name: 'assets/images/technical/csa.png',
                   onTap: () {},
                 ),

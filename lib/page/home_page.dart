@@ -7,6 +7,8 @@ import 'package:pup_prep/page/UG/UG_page.dart';
 import 'package:pup_prep/widgets/course_tile.dart';
 import 'package:pup_prep/widgets/up_banner.dart';
 
+import '../widgets/wotking.dart';
+
 class Home_Page extends StatefulWidget {
   const Home_Page({super.key});
 
@@ -74,32 +76,13 @@ class _Home_PageState extends State<Home_Page> {
                       width: mq.width * 0.6,
                       height: mq.height * 0.06,
                     ),
-                    // ElevatedButton(
-                    //     style: ElevatedButton.styleFrom(
-                    //       backgroundColor: Color(0xFFFFF0F0),
-                    //       shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.circular(100),
-                    //       ),
-                    //     ),
-                    //     onPressed: () async {
-                    //       File? file = await Pdf_Api.pickfile();
-                    //         Pdf_Api.openpdf(context, file!);
-                    //     },
-                    //     child: Text(
-                    //       'OPEN PDF',
-                    //       style: TextStyle(
-                    //         fontSize: 15,
-                    //         fontFamily: 'font2',
-                    //         color: Colors.blue.shade900,
-                    //       ),
-                    //     )),
                     SizedBox(
                       width: 5,
                     ),
                   ],
                 ),
                 Courses_Tile(
-                    imageName: "assets/images/ug1.png",
+                    imageName: "assets/images/ug.png",
                     btext: 'Click here',
                     cours_text: "Under Graduation",
                     onTap: () {
@@ -120,14 +103,12 @@ class _Home_PageState extends State<Home_Page> {
                   height: mq.height * 0.06,
                 ),
                 Courses_Tile(
-                    imageName: "assets/images/other.png",
+                    imageName: "assets/images/pgdca.png",
                     btext: 'Click here',
                     cours_text: "PGDCA",
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => OtherCourses()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => working()));
                     })
               ],
             ),

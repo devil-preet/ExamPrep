@@ -50,7 +50,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
       ),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("MCA - 4TH SEMESTER"),
+        title: Text("Msc (IT) - 4TH SEMESTER"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pup_prep/main.dart';
 import 'package:pup_prep/widgets/program_tile.dart';
 import 'package:pup_prep/widgets/up_banner.dart';
+import '../../widgets/wotking.dart';
 import 'MCA/MCA.dart';
 
 class PostGrad extends StatefulWidget {
@@ -48,28 +49,39 @@ class _PostGradState extends State<PostGrad> {
                   child: Row(
                     children: [
                       Program_Tile(
-                          imageName: 'assets/images/login2.png',
+                          imageName: 'assets/images/pg/MCA.png',
                           program_name: 'MCA',
                           onTap: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) => MCA()));
                           }),
                       Program_Tile(
-                        imageName: 'assets/images/other.png',
-                        program_name: 'MA(English)',
-                      ),
+                          imageName: 'assets/images/pg/Msc(IT).png',
+                          program_name: 'Msc (IT)',
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => working()));
+                          }),
                       Program_Tile(
-                        imageName: 'assets/images/other.png',
-                        program_name: 'MA(History)',
-                      ),
+                          imageName: 'assets/images/pg/English.png',
+                          program_name: 'MA(English)',
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => working()));
+                          }),
                       Program_Tile(
-                        imageName: 'assets/images/ug.png',
-                        program_name: 'M-TECH',
-                      ),
-                      Program_Tile(
-                        imageName: 'assets/images/pg.png',
-                        program_name: 'MBA',
-                      ),
+                          imageName: 'assets/images/pg/history.png',
+                          program_name: 'MA(History)',
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => working()));
+                          }),
                     ],
                   ),
                 ),

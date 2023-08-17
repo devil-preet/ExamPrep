@@ -7,6 +7,7 @@ import 'package:pup_prep/page/PG/MCA/third_sem.dart';
 import 'package:pup_prep/page/PG/MCA/fourth_sem.dart';
 
 import '../../../main.dart';
+import '../../../widgets/wotking.dart';
 
 class MCA extends StatefulWidget {
   const MCA({super.key});
@@ -73,7 +74,7 @@ class _MCAState extends State<MCA> {
                 Semester_tile(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Third_Sem()));
+                        MaterialPageRoute(builder: (context) => working()));
                   },
                   sem_name: '3rd Semester',
                   image_name: 'assets/images/sem/3no.png',

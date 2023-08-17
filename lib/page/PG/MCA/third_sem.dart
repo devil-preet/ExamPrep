@@ -47,7 +47,7 @@ class _Third_SemState extends State<Third_Sem> {
       ),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("BCA - 3rd SEMESTER"),
+        title: Text("MCA - 3rd SEMESTER"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
