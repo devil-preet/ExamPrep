@@ -56,8 +56,11 @@ class _PDFScreenState extends State<PDFScreen> {
     return Scaffold(
         body: _pdfPath == null
             ? Center(child: CircularProgressIndicator())
-            : PDFView(
-                filePath: _pdfPath,
+            : Scrollbar(
+                isAlwaysShown: true,
+                child: PDFView(
+                  filePath: _pdfPath,
+                ),
               ));
   }
 }

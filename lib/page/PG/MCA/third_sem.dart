@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../api_pdf/pdf_api.dart';
 import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';

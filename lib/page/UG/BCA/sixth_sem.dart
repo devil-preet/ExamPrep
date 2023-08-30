@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:pup_prep/api_pdf/pdfview_page.dart';
-
-import '../../../api_pdf/pdf_api.dart';
 import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
@@ -77,7 +75,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA', sem: 'Sem6', filename: 'E-Com')));
+                                course: 'BCA',
+                                sem: 'Sem6',
+                                filename: 'E-Com')));
                   },
                 ),
                 Subject_tile(
@@ -109,7 +109,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA', sem: 'Sem6', filename: 'ASP.Net')));
+                                course: 'BCA',
+                                sem: 'Sem6',
+                                filename: 'ASP.Net')));
                   },
                   image_name: 'assets/images/technical/asp.png',
                 ),
@@ -121,7 +123,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA', sem: 'Sem6', filename: 'Q-Pbi')));
+                                course: 'BCA',
+                                sem: 'Sem6',
+                                filename: 'Q-Pbi')));
                   },
                 ),
                 Subject_tile(

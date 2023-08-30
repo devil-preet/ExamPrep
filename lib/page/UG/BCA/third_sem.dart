@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:pup_prep/api_pdf/pdfview_page.dart';
-
-import '../../../api_pdf/pdf_api.dart';
 import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
@@ -106,7 +104,7 @@ class _Third_SemState extends State<Third_Sem> {
                   title: 'DBMS',
                   image_name: 'assets/images/technical/dbms.png',
                   onTap: () {
-                                        Navigator.push(
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
@@ -119,7 +117,7 @@ class _Third_SemState extends State<Third_Sem> {
                   title: 'OOPs uing C++',
                   image_name: 'assets/images/technical/cpp.png',
                   onTap: () {
-                                        Navigator.push(
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
