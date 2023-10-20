@@ -22,13 +22,7 @@ class _UnderGradState extends State<UnderGrad> {
         height: mq.height,
         width: mq.width,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 195, 55, 99), //redish
-              Color.fromARGB(255, 29, 37, 113), //blueish
-            ], // You can change the colors here
-            // begin: Alignment.topCenter, end: Alignment.bottomCenter,
-          ),
+         color: Color(0xFF6A8C95),
         ),
         // ),
         child: SafeArea(
@@ -155,14 +149,7 @@ class _UnderGradState extends State<UnderGrad> {
         ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99), //redish
-                Color.fromARGB(255, 29, 37, 113), //blueish
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
-            ),
+             color: Color(0xFF6A8C95)
           ),
         ),
       ),

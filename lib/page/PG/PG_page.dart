@@ -20,14 +20,7 @@ class _PostGradState extends State<PostGrad> {
       body: Container(
         height: mq.height,
         width: mq.width,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 195, 55, 99),
-              Color.fromARGB(255, 29, 37, 113),
-            ],
-          ),
-        ),
+       color: Color(0xFF6A8C95),
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -94,14 +87,7 @@ class _PostGradState extends State<PostGrad> {
         centerTitle: true,
         title: Text("CHOOSE YOUR PROGRAM"),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+          color: Color(0xFF6A8C95),
         ),
       ),
     );

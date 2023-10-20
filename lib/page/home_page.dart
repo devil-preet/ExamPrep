@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pup_prep/main.dart';
-import 'package:pup_prep/page/OTHERS/Other_courses.dart';
 import 'package:pup_prep/page/PG/PG_page.dart';
 import 'package:pup_prep/page/UG/UG_page.dart';
 import 'package:pup_prep/widgets/course_tile.dart';
@@ -24,11 +23,7 @@ class _Home_PageState extends State<Home_Page> {
       SystemUiOverlayStyle(
         // Use a BoxDecoration to create a gradient color
         systemNavigationBarColor: BoxDecoration(
-          gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 195, 55, 99), //redish
-            Color.fromARGB(255, 29, 37, 113),
-          ] //blueish,
-              ),
+         color: Color(0xFF6A8C95),
         ).color,
         systemNavigationBarIconBrightness: Brightness.light,
         systemNavigationBarDividerColor: Colors.transparent,
@@ -43,12 +38,7 @@ class _Home_PageState extends State<Home_Page> {
         ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
+           color: Color(0xFF6A8C95),
           ),
         ),
       ),
@@ -56,12 +46,7 @@ class _Home_PageState extends State<Home_Page> {
         height: mq.height,
         width: mq.width,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 195, 55, 99),
-              Color.fromARGB(255, 29, 37, 113),
-            ],
-          ),
+         color: Color(0xFF6A8C95),
         ),
         child: SafeArea(
           child: SingleChildScrollView(

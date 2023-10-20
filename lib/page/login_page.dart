@@ -25,9 +25,6 @@ class _Login_PageState extends State<Login_Page> {
         height: mq.height,
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 8, 66, 85),
-          // image: DecorationImage(
-          //     image: AssetImage("assets/images/login.jpg"),
-          //     fit: BoxFit.fill)
         ),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),

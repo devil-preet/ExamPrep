@@ -24,14 +24,7 @@ class Program_Tile extends StatelessWidget {
           height: mq.height * 0.50,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 195, 55, 99),
-                  Color.fromARGB(255, 29, 37, 113),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [0.1, 3.0]),
+           color: Color(0xFF6A8C95).withOpacity(0.7),
           ),
           child: Padding(
             padding: EdgeInsets.only(left: 20),
@@ -52,7 +45,7 @@ class Program_Tile extends StatelessWidget {
                   program_name,
                   style: TextStyle(
                       fontSize: 25,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontWeight: FontWeight.w500,
                       fontFamily: 'font1'),
                 ),
@@ -63,7 +56,7 @@ class Program_Tile extends StatelessWidget {
                   'Get previous year question-papers\nof ${program_name.toLowerCase()}',
                   style: TextStyle(
                       fontSize: 18,
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.black,
                       fontWeight: FontWeight.w500,
                       fontFamily: 'font1'),
                 ),
@@ -84,7 +77,7 @@ class Program_Tile extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.arrow_forward_outlined,
-                          color: Colors.blue.shade900,
+                          color: Colors.black,
                           size: 30,
                         ),
                       ),
@@ -107,7 +100,7 @@ class Program_Tile extends StatelessWidget {
                             child: Text(
                               'Choose Sem',
                               style: TextStyle(
-                                  color: Colors.blue.shade900,
+                                  color: Colors.black,
                                   fontSize: 19,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'font2'),

@@ -25,19 +25,12 @@ class Subject_tile extends StatelessWidget {
           width: mq.width,
           height: mq.height * 0.20,
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                    Color.fromARGB(255, 195, 55, 99), //redish
-                    Color.fromARGB(255, 29, 37, 113), //blueish
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: [0.1, 6.0]),
+              color:  Color(0xFF6A8C95).withOpacity(0.7),
               borderRadius: BorderRadius.circular(30)),
           child: Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 5),
+                padding: const EdgeInsets.only(left: 10),
                 child: Container(
                   width: mq.width * 0.3,
                   height: mq.height * 0.15,
@@ -55,7 +48,7 @@ class Subject_tile extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                        color: Colors.white, fontSize: 21, fontFamily: 'font1'),
+                        color: Colors.black, fontSize: 21, fontFamily: 'font1'),
                   ),
                   Row(
                     children: [
@@ -76,7 +69,7 @@ class Subject_tile extends StatelessWidget {
                               child: Text(
                                 'Click To Get',
                                 style: TextStyle(
-                                    color: Colors.blue.shade900,
+                                    color: Colors.black,
                                     fontSize: 15,
                                     fontFamily: 'font1'),
                               ),
@@ -99,7 +92,7 @@ class Subject_tile extends StatelessWidget {
                           ),
                           child: Icon(
                             Icons.download,
-                            color: Colors.blue.shade900,
+                            color: Colors.black,
                             size: 30,
                           ),
                         ),

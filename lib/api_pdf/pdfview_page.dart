@@ -57,7 +57,6 @@ class _PDFScreenState extends State<PDFScreen> {
         body: _pdfPath == null
             ? Center(child: CircularProgressIndicator())
             : Scrollbar(
-                isAlwaysShown: true,
                 child: PDFView(
                   filePath: _pdfPath,
                 ),

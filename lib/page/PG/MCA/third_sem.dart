@@ -22,14 +22,7 @@ class _Third_SemState extends State<Third_Sem> {
         child: Container(
           height: mq.height,
           width: mq.width,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+         color: Color(0xFF6A8C95),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,14 +42,7 @@ class _Third_SemState extends State<Third_Sem> {
         title: Text("MCA - 3rd SEMESTER"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
-            ),
+           color: Color(0xFF6A8C95)
           ),
         ),
       ),

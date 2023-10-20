@@ -24,14 +24,7 @@ class Courses_Tile extends StatelessWidget {
           width: mq.width,
           height: mq.height * 0.20,
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                    Color(0xFFC33763), //redish
-                    Color(0xFF1D2571), //blueish
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: [0.01, 2.0]),
+              color: Color(0xFF6A8C95).withOpacity(0.7),
               borderRadius: BorderRadius.circular(35)),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -67,7 +60,7 @@ class Courses_Tile extends StatelessWidget {
                     cours_text,
                     maxLines: 2,
                     style: TextStyle(
-                        color: Color.fromARGB(255, 253, 249, 233),
+                        color: Colors.black,
                         fontSize: 20,
                         fontFamily: 'font1'),
                   ),
@@ -86,7 +79,7 @@ class Courses_Tile extends StatelessWidget {
                           child: Text(
                             btext,
                             style: TextStyle(
-                                color: Colors.blue.shade900,
+                                color: Colors.black,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
                                 fontFamily: 'font2'),

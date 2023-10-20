@@ -25,28 +25,14 @@ class _Third_SemState extends State<Third_Sem> {
           style: TextStyle(fontFamily: 'font1'),
         ),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+          color: Color(0xFF6A8C95),
         ),
       ),
       body: SafeArea(
         child: Container(
           height: mq.height,
           width: mq.width,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+          color: Color(0xFF6A8C95),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -3,7 +3,6 @@ import 'package:pup_prep/widgets/sem_tile.dart';
 import 'package:pup_prep/widgets/up_banner.dart';
 import 'package:pup_prep/page/PG/MCA/first_sem.dart';
 import 'package:pup_prep/page/PG/MCA/second_sem.dart';
-import 'package:pup_prep/page/PG/MCA/third_sem.dart';
 import 'package:pup_prep/page/PG/MCA/fourth_sem.dart';
 
 import '../../../main.dart';
@@ -24,15 +23,7 @@ class _MCAState extends State<MCA> {
       body: Container(
         height: mq.height,
         width: mq.width,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 195, 55, 99),
-              Color.fromARGB(255, 29, 37, 113),
-            ], // You can change the colors here
-            // begin: Alignment.topCenter, end: Alignment.bottomCenter,
-          ),
-        ),
+       color: Color(0xFF6A8C95),
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -105,16 +96,7 @@ class _MCAState extends State<MCA> {
         centerTitle: true,
         title: Text("PROGRAM - MCA"),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ], // You can change the colors here
-              // begin: Alignment.topCenter,
-              // end: Alignment.bottomCenter,
-            ),
-          ),
+         color: Color(0xFF6A8C95),
         ),
       ),
     );

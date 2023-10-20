@@ -23,14 +23,7 @@ class _Fifth_SemState extends State<Fifth_Sem> {
           style: TextStyle(fontFamily: 'font1'),
         ),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+          color: Color(0xFF6A8C95),
         ),
       ),
       body: SafeArea(
@@ -38,12 +31,7 @@ class _Fifth_SemState extends State<Fifth_Sem> {
           height: mq.height,
           width: mq.width,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
+            color: Color(0xFF6A8C95)
           ),
           child: SingleChildScrollView(
             child: Column(
@@ -57,7 +45,13 @@ class _Fifth_SemState extends State<Fifth_Sem> {
                 Subject_tile(
                   title: 'English Litrary \nSkills-1',
                   image_name: 'assets/images/technical/eng.png',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA', sem: 'Sem5', filename: 'ELS')));
+                  },
                 ),
                 Subject_tile(
                   title: 'System Analysis & \nDesign',
@@ -106,16 +100,6 @@ class _Fifth_SemState extends State<Fifth_Sem> {
                                 sem: 'Sem5',
                                 filename: 'HTML')));
                   },
-                ),
-                Subject_tile(
-                  title: 'Punjabi',
-                  image_name: 'assets/images/technical/pub.png',
-                  onTap: () {},
-                ),
-                Subject_tile(
-                  title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/technical/pbi.png',
-                  onTap: () {},
                 ),
               ],
             ),

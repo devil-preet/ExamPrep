@@ -19,14 +19,7 @@ class _First_SemState extends State<First_Sem> {
         child: Container(
           height: mq.height,
           width: mq.width,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+          color: Color(0xFF6A8C95),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,7 +45,7 @@ class _First_SemState extends State<First_Sem> {
                   onTap: () {},
                 ),
                 Subject_tile(
-                  title: 'Statistics and Probability',
+                  title: 'Statistics and\nProbability',
                   image_name: 'assets/images/technical/math2.png',
                   onTap: () {},
                 ),
@@ -65,14 +58,7 @@ class _First_SemState extends State<First_Sem> {
         centerTitle: true,
         title: Text("MCA - 1st SEMESTER"),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 195, 55, 99),
-                Color.fromARGB(255, 29, 37, 113),
-              ],
-            ),
-          ),
+          color: Color(0xFF6A8C95),
         ),
       ),
     );
