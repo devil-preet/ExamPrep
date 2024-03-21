@@ -44,7 +44,7 @@ class _Third_SemState extends State<Third_Sem> {
                 ),
                 Subject_tile(
                   title: 'English Communi-\ncation Skills-1',
-                  image_name: 'assets/images/technical/engc.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fengc.png?alt=media&token=56882483-7b20-4ca0-88b1-c1d068483df8',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -57,7 +57,7 @@ class _Third_SemState extends State<Third_Sem> {
                 ),
                 Subject_tile(
                   title: 'Descrete Maths',
-                  image_name: 'assets/images/technical/math2.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fmath2.png?alt=media&token=885576c1-8bf0-47de-bafe-e13ead130d66',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -70,7 +70,7 @@ class _Third_SemState extends State<Third_Sem> {
                 ),
                 Subject_tile(
                   title: 'CSOA',
-                  image_name: 'assets/images/technical/csa.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fcsa.png?alt=media&token=fc6cffa7-3edc-413a-90a5-10c3b44838a8',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -83,12 +83,12 @@ class _Third_SemState extends State<Third_Sem> {
                 ),
                 Subject_tile(
                   title: 'EVS',
-                  image_name: 'assets/images/technical/evs.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fevs.png?alt=media&token=7d06ba91-ac14-4399-8a20-11185e49e988',
                   onTap: () {},
                 ),
                 Subject_tile(
                   title: 'DBMS',
-                  image_name: 'assets/images/technical/dbms.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdbms1.png?alt=media&token=ee38ae7b-1087-4027-8fd0-e03a9389acb0',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -101,7 +101,7 @@ class _Third_SemState extends State<Third_Sem> {
                 ),
                 Subject_tile(
                   title: 'OOPs uing C++',
-                  image_name: 'assets/images/technical/cpp.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fcpp.png?alt=media&token=7345b158-6747-4a98-9b08-24b3aed83e39',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -111,16 +111,6 @@ class _Third_SemState extends State<Third_Sem> {
                                 sem: 'Sem3',
                                 filename: 'c++-sem3')));
                   },
-                ),
-                Subject_tile(
-                  title: 'Punjabi',
-                  image_name: 'assets/images/technical/pub.png',
-                  onTap: () {},
-                ),
-                Subject_tile(
-                  title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/technical/pbi.png',
-                  onTap: () {},
                 ),
               ],
             ),

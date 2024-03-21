@@ -39,17 +39,17 @@ class _PostGradState extends State<PostGrad> {
                 ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  child: Row(
+                  child: Column(
                     children: [
                       Program_Tile(
-                          imageName: 'assets/images/pg/MCA.png',
+                          imageName: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FPost%20Graduation%2FMCA.png?alt=media&token=beec8359-b4cd-40df-ab65-ca6b3ebad06e',
                           program_name: 'MCA',
                           onTap: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) => MCA()));
                           }),
                       Program_Tile(
-                          imageName: 'assets/images/pg/Msc(IT).png',
+                          imageName: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FPost%20Graduation%2FMsc(IT).png?alt=media&token=5517e3b1-442a-4cfc-a6a1-69a307932d51',
                           program_name: 'Msc (IT)',
                           onTap: () {
                             Navigator.push(
@@ -58,7 +58,7 @@ class _PostGradState extends State<PostGrad> {
                                     builder: (context) => working()));
                           }),
                       Program_Tile(
-                          imageName: 'assets/images/pg/English.png',
+                          imageName: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FPost%20Graduation%2FEnglish.png?alt=media&token=797dcaec-4709-4309-83e9-e6fe37f784d1',
                           program_name: 'MA(English)',
                           onTap: () {
                             Navigator.push(
@@ -67,7 +67,7 @@ class _PostGradState extends State<PostGrad> {
                                     builder: (context) => working()));
                           }),
                       Program_Tile(
-                          imageName: 'assets/images/pg/history.png',
+                          imageName: "https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FPost%20Graduation%2Fhistory.png?alt=media&token=c892bee5-f649-4284-94f2-4195189b7d6d",
                           program_name: 'MA(History)',
                           onTap: () {
                             Navigator.push(

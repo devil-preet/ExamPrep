@@ -46,7 +46,7 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'General English-1',
-                  image_name: 'assets/images/technical/eng.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -59,7 +59,7 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Fundamentals of IT',
-                  image_name: 'assets/images/technical/IT.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FIT.png?alt=media&token=a023a0b8-265d-4085-a5ff-bc082d37527b',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -72,7 +72,7 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Office Automation',
-                  image_name: 'assets/images/technical/OA2.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FOA2.png?alt=media&token=438d3cce-f50b-4ba4-8c41-528515708f87',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -85,7 +85,7 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Programming Funda-\nmentals Using C',
-                  image_name: 'assets/images/technical/C.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FC.png?alt=media&token=ec76ffe6-3bcd-4087-bd21-793853a28761',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -98,12 +98,12 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Punjabi',
-                  image_name: 'assets/images/technical/pub.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpub.png?alt=media&token=40f1e69d-cb9c-4f10-8db4-b6e2bbacc454',
                   onTap: () {},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/technical/pbi.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpbi.png?alt=media&token=c0cad45e-ae09-4ee0-952d-073a3dba57cb',
                   onTap: () {
                     Navigator.push(
                         context,

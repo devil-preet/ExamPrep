@@ -44,12 +44,12 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                 ),
                 Subject_tile(
                   title: 'English Communi-\ncation Skills-2',
-                  image_name: 'assets/images/technical/eng.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
                   onTap: () {},
                 ),
                 Subject_tile(
                   title: 'CONSM (Maths)',
-                  image_name: 'assets/images/technical/math2.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fmath2.png?alt=media&token=885576c1-8bf0-47de-bafe-e13ead130d66',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -62,7 +62,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                 ),
                 Subject_tile(
                   title: 'Management Infor-\nmation System',
-                  image_name: 'assets/images/technical/mis.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fmis.png?alt=media&token=a392e8cb-cb33-44ea-8a3f-ed4622e3f35b',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -73,7 +73,7 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                 ),
                 Subject_tile(
                   title: 'Computer Natworks',
-                  image_name: 'assets/images/technical/cn.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fcn.png?alt=media&token=21b85bea-34f8-42f4-bd24-6e6126617dbc',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -84,19 +84,10 @@ class _Fourth_SemState extends State<Fourth_Sem> {
                 ),
                 Subject_tile(
                   title: 'RDBMS',
-                  image_name: 'assets/images/technical/dbms.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdbms.png?alt=media&token=cc434233-0b0d-4f17-b852-f767937b641d',
                   onTap: () {},
                 ),
-                Subject_tile(
-                  title: 'Punjabi',
-                  image_name: 'assets/images/technical/pub.png',
-                  onTap: () {},
-                ),
-                Subject_tile(
-                  title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/technical/pbi.png',
-                  onTap: () {},
-                ),
+                
               ],
             ),
           ),

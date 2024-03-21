@@ -5,17 +5,21 @@ class Subject_tile extends StatelessWidget {
   Subject_tile({
     super.key,
     required this.onTap,
-    required this.image_name,
+    this.image_name,
     required this.title,
     // required this.title2,
   });
   Function() onTap;
-  String image_name;
+  String? image_name;
   String title;
   // String title2;
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
+    if (image_name == null) {
+      image_name =
+          "https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Fstudent_9949295.png?alt=media&token=72857bd9-1a3c-45a6-bbfe-bbc6c3beb7e8";
+    }
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
       child: Material(
@@ -25,7 +29,7 @@ class Subject_tile extends StatelessWidget {
           width: mq.width,
           height: mq.height * 0.20,
           decoration: BoxDecoration(
-              color:  Color(0xFF6A8C95).withOpacity(0.7),
+              color: Color(0xFF6A8C95).withOpacity(0.7),
               borderRadius: BorderRadius.circular(30)),
           child: Row(
             children: [
@@ -35,7 +39,8 @@ class Subject_tile extends StatelessWidget {
                   width: mq.width * 0.3,
                   height: mq.height * 0.15,
                   decoration: BoxDecoration(
-                      image: DecorationImage(image: AssetImage(image_name))),
+                      image: DecorationImage(
+                          image: NetworkImage(image_name.toString()))),
                 ),
               ),
               SizedBox(

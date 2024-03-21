@@ -14,6 +14,10 @@ class Program_Tile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
+    if (imageName == null) {
+      imageName =
+          "https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FPost%20Graduation%2Fgraduated.png?alt=media&token=d2abd5ea-9f59-4710-85ed-7421c92378f4";
+    }
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: Material(
@@ -24,7 +28,7 @@ class Program_Tile extends StatelessWidget {
           height: mq.height * 0.50,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-           color: Color(0xFF6A8C95).withOpacity(0.7),
+            color: Color(0xFF6A8C95).withOpacity(0.7),
           ),
           child: Padding(
             padding: EdgeInsets.only(left: 20),
@@ -38,7 +42,7 @@ class Program_Tile extends StatelessWidget {
                     height: mq.height * 0.28,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage(imageName.toString()))),
+                            image: NetworkImage(imageName.toString()))),
                   ),
                 ),
                 Text(

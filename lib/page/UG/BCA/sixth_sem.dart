@@ -44,7 +44,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                 ),
                 Subject_tile(
                   title: 'English Litrary \nSkills-2',
-                  image_name: 'assets/images/technical/eng.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -55,7 +55,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                 ),
                 Subject_tile(
                   title: 'E-Commerce',
-                  image_name: 'assets/images/technical/ec.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fec.png?alt=media&token=de8d8dc1-5cc8-40ca-a5f9-d502358d3e41',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -68,7 +68,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                 ),
                 Subject_tile(
                   title: 'Operating Systems',
-                  image_name: 'assets/images/technical/os.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fos.png?alt=media&token=91f62705-21d5-459a-84f0-ca13792c097d',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -79,7 +79,7 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                 ),
                 Subject_tile(
                   title: 'Software Engeeniring',
-                  image_name: 'assets/images/technical/swe.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fswe.png?alt=media&token=2a65c618-9429-44ff-b25e-0d8d7ba3d986',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -99,32 +99,9 @@ class _Sixth_SemState extends State<Sixth_Sem> {
                                 sem: 'Sem6',
                                 filename: 'ASP.Net')));
                   },
-                  image_name: 'assets/images/technical/asp.png',
+                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fasp.png?alt=media&token=a435c67f-c70e-4bba-ad1d-95a6e8f288cb',
                 ),
-                Subject_tile(
-                  title: 'Punjabi',
-                  image_name: 'assets/images/technical/pub.png',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                course: 'BCA',
-                                sem: 'Sem6',
-                                filename: 'Q-Pbi')));
-                  },
-                ),
-                Subject_tile(
-                  title: 'Punjabi Mudla Gyan',
-                  image_name: 'assets/images/technical/pbi.png',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                course: 'BCA', sem: 'Sem6', filename: '')));
-                  },
-                ),
+                
               ],
             ),
           ),
