@@ -24,7 +24,7 @@ class _First_SemState extends State<First_Sem> {
         ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            color:  Color(0xFF6A8C95),
+            color: Color(0xFF6A8C95),
           ),
         ),
       ),
@@ -33,7 +33,7 @@ class _First_SemState extends State<First_Sem> {
           height: mq.height,
           width: mq.width,
           decoration: BoxDecoration(
-           color:  Color(0xFF6A8C95),
+            color: Color(0xFF6A8C95),
           ),
           child: SingleChildScrollView(
             child: Column(
@@ -46,7 +46,8 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'General English-1',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -59,7 +60,8 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Fundamentals of IT',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FIT.png?alt=media&token=a023a0b8-265d-4085-a5ff-bc082d37527b',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FIT.png?alt=media&token=a023a0b8-265d-4085-a5ff-bc082d37527b',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -72,7 +74,8 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Office Automation',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FOA2.png?alt=media&token=438d3cce-f50b-4ba4-8c41-528515708f87',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FOA2.png?alt=media&token=438d3cce-f50b-4ba4-8c41-528515708f87',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -85,7 +88,8 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Programming Funda-\nmentals Using C',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FC.png?alt=media&token=ec76ffe6-3bcd-4087-bd21-793853a28761',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2FC.png?alt=media&token=ec76ffe6-3bcd-4087-bd21-793853a28761',
                   onTap: () {
                     Navigator.push(
                         context,
@@ -98,12 +102,22 @@ class _First_SemState extends State<First_Sem> {
                 ),
                 Subject_tile(
                   title: 'Punjabi',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpub.png?alt=media&token=40f1e69d-cb9c-4f10-8db4-b6e2bbacc454',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpub.png?alt=media&token=40f1e69d-cb9c-4f10-8db4-b6e2bbacc454',
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem1',
+                                filename: 'Punjabi')));
+                  },
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpbi.png?alt=media&token=c0cad45e-ae09-4ee0-952d-073a3dba57cb',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpbi.png?alt=media&token=c0cad45e-ae09-4ee0-952d-073a3dba57cb',
                   onTap: () {
                     Navigator.push(
                         context,

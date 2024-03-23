@@ -84,7 +84,15 @@ class _Third_SemState extends State<Third_Sem> {
                 Subject_tile(
                   title: 'EVS',
                   image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fevs.png?alt=media&token=7d06ba91-ac14-4399-8a20-11185e49e988',
-                  onTap: () {},
+                  onTap: () {
+                     Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                course: 'BCA',
+                                sem: 'Sem3',
+                                filename: 'EVS')));
+                  },
                 ),
                 Subject_tile(
                   title: 'DBMS',

@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:pup_prep/api_pdf/pdfview_page.dart';
 import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
@@ -43,38 +44,93 @@ class _Second_SemState extends State<Second_Sem> {
                 ),
                 Subject_tile(
                   title: 'General English-2',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "General English-2",
+                                course: "BCA",
+                                sem: "Sem2")));
+                  },
                 ),
                 Subject_tile(
                   title: 'Basic Maths',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fmath1.png?alt=media&token=e7790ada-72ff-4f4b-ba89-cac49ea43519g',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fmath1.png?alt=media&token=e7790ada-72ff-4f4b-ba89-cac49ea43519g',
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "Basic_Maths",
+                                course: "BCA",
+                                sem: "Sem2")));
+                  },
                 ),
                 Subject_tile(
                   title: 'Data Structures',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdsa.png?alt=media&token=ca1e3a1e-b9de-44de-9b49-5b4963d15afd',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdsa.png?alt=media&token=ca1e3a1e-b9de-44de-9b49-5b4963d15afd',
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "Data_Structures",
+                                course: "BCA",
+                                sem: "Sem2")));
+                  },
                 ),
                 Subject_tile(
                   title: 'Digital Electronics',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fde.png?alt=media&token=6d31d2bd-16d0-479d-9dea-b3903ae896a0',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fde.png?alt=media&token=6d31d2bd-16d0-479d-9dea-b3903ae896a0',
+                  onTap: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "Digital_Electronics",
+                                course: "BCA",
+                                sem: "Sem2")));},
                 ),
                 Subject_tile(
                   title: 'Drug Abuse',
-                  onTap: () {},
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdrug.png?alt=media&token=01c7b83e-696f-448e-97ff-0cb0dceef260',
+                  onTap: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "Drug_Abuse",
+                                course: "BCA",
+                                sem: "Sem2")));},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdrug.png?alt=media&token=01c7b83e-696f-448e-97ff-0cb0dceef260',
                 ),
                 Subject_tile(
                   title: 'Punjabi',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpub.png?alt=media&token=40f1e69d-cb9c-4f10-8db4-b6e2bbacc454',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpub.png?alt=media&token=40f1e69d-cb9c-4f10-8db4-b6e2bbacc454',
+                  onTap: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "Punjabi",
+                                course: "BCA",
+                                sem: "Sem2")));},
                 ),
                 Subject_tile(
                   title: 'Punjabi Mudla Gyan',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpbi.png?alt=media&token=c0cad45e-ae09-4ee0-952d-073a3dba57cb',
-                  onTap: () {},
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpbi.png?alt=media&token=c0cad45e-ae09-4ee0-952d-073a3dba57cb',
+                  onTap: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PDFScreen(
+                                filename: "Punjabi Mudla Gyan",
+                                course: "BCA",
+                                sem: "Sem2")));},
                 ),
               ],
             ),

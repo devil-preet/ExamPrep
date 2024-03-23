@@ -34,17 +34,17 @@ class Subject_tile extends StatelessWidget {
           child: Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: 15),
                 child: Container(
-                  width: mq.width * 0.3,
-                  height: mq.height * 0.15,
+                  width: mq.width * 0.2,
+                  height: mq.height * 0.1,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: NetworkImage(image_name.toString()))),
                 ),
               ),
               SizedBox(
-                width: 10,
+                width: 20,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
