@@ -6,14 +6,14 @@ import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
 
-class Fourth_SemBA extends StatefulWidget {
-  const Fourth_SemBA({super.key});
+class Fifth_SemBA extends StatefulWidget {
+  const Fifth_SemBA({super.key});
 
   @override
-  State<Fourth_SemBA> createState() => _Fourth_SemBAState();
+  State<Fifth_SemBA> createState() => _Fifth_SemBAState();
 }
 
-class _Fourth_SemBAState extends State<Fourth_SemBA> {
+class _Fifth_SemBAState extends State<Fifth_SemBA> {
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
@@ -21,7 +21,7 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "BA - 4nd SEMESTER",
+          "BA - 6nd SEMESTER",
           style: TextStyle(fontFamily: 'font1'),
         ),
         flexibleSpace: Container(

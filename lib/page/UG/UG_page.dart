@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pup_prep/main.dart';
 import 'package:pup_prep/page/UG/BA/ba_course.dart';
+import 'package:pup_prep/page/UG/Bsc(Biotech)/Bsc-Biotech_course.dart';
 import 'package:pup_prep/widgets/program_tile.dart';
 import 'package:pup_prep/widgets/up_banner.dart';
 import 'package:pup_prep/widgets/wotking.dart';
@@ -82,7 +83,7 @@ class _UnderGradState extends State<UnderGrad> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => working()));
+                                    builder: (context) => BSC_BIOTECH()));
                           }),
                       Program_Tile(
                           imageName:

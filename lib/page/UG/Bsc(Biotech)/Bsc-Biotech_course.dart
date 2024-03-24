@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:pup_prep/main.dart';
-import 'package:pup_prep/page/UG/BA/fourth_SemBA.dart';
-import 'package:pup_prep/page/UG/BA/second_SemBa.dart';
-import 'package:pup_prep/page/UG/BA/sixth_SemBA.dart';
+import 'package:pup_prep/page/UG/Bsc(Biotech)/first_sem-Bsc-Biotech.dart';
+import 'package:pup_prep/page/UG/Bsc(Biotech)/sixth_sem-Bsc-Biotech.dart';
+import 'package:pup_prep/page/UG/Bsc(Biotech)/third_sem-Bsc-Biotech.dart';
 import 'package:pup_prep/widgets/sem_tile.dart';
 import 'package:pup_prep/widgets/up_banner.dart';
 import 'package:pup_prep/widgets/wotking.dart';
 
-class BA extends StatefulWidget {
-  const BA({super.key});
+class BSC_BIOTECH extends StatefulWidget {
+  const BSC_BIOTECH({super.key});
 
   @override
-  State<BA> createState() => _BAState();
+  State<BSC_BIOTECH> createState() => _BSC_BIOTECHState();
 }
 
-class _BAState extends State<BA> {
+class _BSC_BIOTECHState extends State<BSC_BIOTECH> {
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "PROGRAM - BA",
+          "PROGRAM - BSC_BIOTECH",
           style: TextStyle(fontFamily: 'font1'),
         ),
         flexibleSpace: Container(
@@ -44,8 +44,10 @@ class _BAState extends State<BA> {
                 ),
                 Semester_tile(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => working()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => First_Sem_BSC_BIOTECH()));
                   },
                   sem_name: '1st Semester',
                   image_name: 'assets/images/sem/1no.png',
@@ -55,10 +57,8 @@ class _BAState extends State<BA> {
                 ),
                 Semester_tile(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Second_SemBA()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => working()));
                   },
                   sem_name: '2nd Semester',
                   image_name: 'assets/images/sem/2no.png',
@@ -68,8 +68,10 @@ class _BAState extends State<BA> {
                 ),
                 Semester_tile(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => working()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ThirdSem_BSC_BIOTECH()));
                   },
                   sem_name: '3rd Semester',
                   image_name: 'assets/images/sem/3no.png',
@@ -79,10 +81,8 @@ class _BAState extends State<BA> {
                 ),
                 Semester_tile(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Fourth_SemBA()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => working()));
                   },
                   sem_name: '4th Semester',
                   image_name: 'assets/images/sem/4no.png',
@@ -103,8 +103,10 @@ class _BAState extends State<BA> {
                 ),
                 Semester_tile(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Sixth_SemBA()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Sixth_Sem_BSC_BIOTECH()));
                   },
                   sem_name: '6th Semester',
                   image_name: 'assets/images/sem/6no.png',

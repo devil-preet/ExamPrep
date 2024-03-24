@@ -6,14 +6,14 @@ import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
 
-class Fourth_SemBA extends StatefulWidget {
-  const Fourth_SemBA({super.key});
+class Sixth_SemBA extends StatefulWidget {
+  const Sixth_SemBA({super.key});
 
   @override
-  State<Fourth_SemBA> createState() => _Fourth_SemBAState();
+  State<Sixth_SemBA> createState() => _Sixth_SemBAState();
 }
 
-class _Fourth_SemBAState extends State<Fourth_SemBA> {
+class _Sixth_SemBAState extends State<Sixth_SemBA> {
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
@@ -21,7 +21,7 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "BA - 4nd SEMESTER",
+          "BA - 6nd SEMESTER",
           style: TextStyle(fontFamily: 'font1'),
         ),
         flexibleSpace: Container(
@@ -43,7 +43,7 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                   height: mq.height * 0.06,
                 ),
                 Subject_tile(
-                  title: 'English\nCommunication',
+                  title: 'English\nCommunication Skills',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Feng.png?alt=media&token=b0250b58-2733-4645-b155-c9a076c64caeg',
                   onTap: () {
@@ -51,9 +51,9 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "english commnication",
+                                filename: "English communication skils",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
@@ -65,9 +65,9 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "english literature elective",
+                                filename: "Englsih litrature model 1",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
@@ -81,21 +81,7 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                             builder: (context) => PDFScreen(
                                 filename: "history of punjab",
                                 course: "BA",
-                                sem: "Sem4")));
-                  },
-                ),
-                Subject_tile(
-                  title: 'Analytic-II',
-                  image_name:
-                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2FAnalytic%20Geomerty.png?alt=media&token=9ec343f9-8eda-45c5-bbbb-68caae6e70fa',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                filename: "analysis",
-                                course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
@@ -107,13 +93,13 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "punjabi cooumpulsary",
+                                filename: "punjabi coumpalsary",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
-                  title: 'Punjabi Compulsory\n(Forgien Student)',
+                  title: 'Punjabi Compulsory\nMudla Gyaan',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fpub.png?alt=media&token=40f1e69d-cb9c-4f10-8db4-b6e2bbacc454',
                   onTap: () {
@@ -121,9 +107,9 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "punjabi coumpulsary forgien student",
+                                filename: "punjabi compulsart mudla gyaan",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
@@ -135,13 +121,13 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "punjabi sahit",
+                                filename: "lazmi punjabi sahit",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
-                  title: 'Indian Political\nSystem',
+                  title: 'international political\ntheory and practice',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fscience.png?alt=media&token=16097971-16a4-45dc-9f11-98c3489a2dc7',
                   onTap: () {
@@ -149,13 +135,13 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "indian political system",
+                                filename: "international political theory and practice",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
-                  title: 'Macro Ecnomics\n and International',
+                  title: 'World Regional\ngeogrphy',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fgeography.png?alt=media&token=058e2387-a6d7-44aa-b01b-7423c4ef6393',
                   onTap: () {
@@ -163,41 +149,14 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "macroecnomeandinternational",
+                                filename: "world regional geogrphy",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
+
                 Subject_tile(
-                  title: 'Geography of Punjab',
-                  image_name:
-                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fpunjab.png?alt=media&token=5858cae7-c94a-4330-833e-130fb0d2e413',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                filename: "geography of punjab",
-                                course: "BA",
-                                sem: "Sem4")));
-                  },
-                ),
-                Subject_tile(
-                  title: 'Number Theory-VI',
-                  image_name:
-                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fpi.png?alt=media&token=356d08db-3c3b-404b-9e53-b67ac71d05aa',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                filename: "number theory",
-                                course: "BA",
-                                sem: "Sem4")));
-                  },
-                ),
-                Subject_tile(
-                  title: 'Numerical Methods',
+                  title: 'Quantitative Methods',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fcalculus.png?alt=media&token=cfd5c0fa-69e0-46b6-a51e-7212bf64109d',
                   onTap: () {
@@ -205,26 +164,13 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "numerical methods",
+                                filename: "quantitative methods",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
-                ),
-                 Subject_tile(
-                  title: 'DBMS',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdbms1.png?alt=media&token=ee38ae7b-1087-4027-8fd0-e03a9389acb0',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                course: 'BA',
-                                sem: 'Sem4',
-                                filename: 'database management system')));
-                  },
-                ),
+                ), 
                 Subject_tile(
-                  title: 'ICN&IP',
+                  title: 'ICN and IP',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fworld-grid.png?alt=media&token=788e305d-57f8-44a7-ad7e-57a4881e355d',
                   onTap: () {
@@ -234,7 +180,7 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                             builder: (context) => PDFScreen(
                                 filename: "ICN&IP",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
@@ -246,28 +192,13 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "physical eduction",
+                                filename: "physical education",
                                 course: "BA",
-                                sem: "Sem4")));
-                  },
-                ),
-                
-                 Subject_tile(
-                  title: 'Music',
-                  image_name:
-                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fmusic.png?alt=media&token=060b5888-f5d0-4f3a-b580-728abbb6f356',
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PDFScreen(
-                                filename: "music",
-                                course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
                 Subject_tile(
-                  title: 'Music (Theory)',
+                  title: 'Music (Vocal)',
                   image_name:
                       'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBA%2Fvocal.png?alt=media&token=2207dd71-809a-4402-9324-cb195c2ccc1a',
                   onTap: () {
@@ -275,12 +206,11 @@ class _Fourth_SemBAState extends State<Fourth_SemBA> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                filename: "musical theory",
+                                filename: "music vocal",
                                 course: "BA",
-                                sem: "Sem4")));
+                                sem: "Sem6")));
                   },
                 ),
-                
               ],
             ),
           ),

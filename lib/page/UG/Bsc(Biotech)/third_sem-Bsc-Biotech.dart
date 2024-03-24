@@ -6,14 +6,14 @@ import '../../../main.dart';
 import '../../../widgets/subject_tile.dart';
 import '../../../widgets/up_banner.dart';
 
-class Third_Sem extends StatefulWidget {
-  const Third_Sem({super.key});
+class ThirdSem_BSC_BIOTECH extends StatefulWidget {
+  const ThirdSem_BSC_BIOTECH({super.key});
 
   @override
-  State<Third_Sem> createState() => _Third_SemState();
+  State<ThirdSem_BSC_BIOTECH> createState() => _ThirdSem_BSC_BIOTECHState();
 }
 
-class _Third_SemState extends State<Third_Sem> {
+class _ThirdSem_BSC_BIOTECHState extends State<ThirdSem_BSC_BIOTECH> {
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
@@ -43,82 +43,87 @@ class _Third_SemState extends State<Third_Sem> {
                   height: mq.height * 0.06,
                 ),
                 Subject_tile(
-                  title: 'English Communi-\ncation Skills-1',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fengc.png?alt=media&token=56882483-7b20-4ca0-88b1-c1d068483df8',
+                  title: 'Enviromental\nBiotechnology',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBsc%2Fbiochemistry.png?alt=media&token=b4ddd432-a98b-4376-8aee-53ad22210345',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA',
+                                course: 'Bcs(Biotech)',
                                 sem: 'Sem3',
-                                filename: 'english-sem3')));
+                                filename: 'Enviromental Biotechnology')));
                   },
                 ),
                 Subject_tile(
-                  title: 'Descrete Maths',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fmath2.png?alt=media&token=885576c1-8bf0-47de-bafe-e13ead130d66',
+                  title: 'Genetics',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBsc%2Fdna.png?alt=media&token=ddc8a4e1-f5ce-4d2e-8b1d-fa9f624b4d72',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA',
+                                course: 'Bcs(Biotech)',
                                 sem: 'Sem3',
-                                filename: 'math-sem3')));
+                                filename: 'Genetics')));
                   },
                 ),
                 Subject_tile(
-                  title: 'CSOA',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fcsa.png?alt=media&token=fc6cffa7-3edc-413a-90a5-10c3b44838a8',
+                  title: 'Chemistry-III',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBsc%2Flaboratory.png?alt=media&token=24841fd9-c0cb-41b0-bc62-469902272727',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA',
+                                course: 'Bcs(Biotech)',
                                 sem: 'Sem3',
-                                filename: 'csoa-sem3')));
+                                filename: 'Chemistry-3')));
                   },
                 ),
-                
                 Subject_tile(
-                  title: 'DBMS',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fdbms1.png?alt=media&token=ee38ae7b-1087-4027-8fd0-e03a9389acb0',
+                  title: 'General Microbiology',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBsc%2Fvaccine.png?alt=media&token=4c114e52-05f0-4ef7-aa13-3a1cd1830c65',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA',
+                                course: 'Bcs(Biotech)',
                                 sem: 'Sem3',
-                                filename: 'dbms-sem3')));
+                                filename: 'General Microbiology')));
                   },
                 ),
                 Subject_tile(
-                  title: 'OOPs uing C++',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fcpp.png?alt=media&token=7345b158-6747-4a98-9b08-24b3aed83e39',
+                  title: 'Enzymology',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2FBsc%2Fbacteria.png?alt=media&token=9efe1e60-fe0f-4934-b573-bcd61fefa592',
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA',
+                                course: 'Bcs(Biotech)',
                                 sem: 'Sem3',
-                                filename: 'c++-sem3')));
+                                filename: 'Enzymology')));
                   },
                 ),
                 Subject_tile(
-                  title: 'EVS',
-                  image_name: 'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fevs.png?alt=media&token=7d06ba91-ac14-4399-8a20-11185e49e988',
+                  title: 'EVS & Road Safety',
+                  image_name:
+                      'https://firebasestorage.googleapis.com/v0/b/exam-prep-7955c.appspot.com/o/images%2FUnder%20Graduation%2Ftechnical%2Fevs.png?alt=media&token=7d06ba91-ac14-4399-8a20-11185e49e988',
                   onTap: () {
-                     Navigator.push(
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => PDFScreen(
-                                course: 'BCA',
+                                course: 'Bcs(Biotech)',
                                 sem: 'Sem3',
-                                filename: 'EVS')));
+                                filename: 'EVS & Road Safety')));
                   },
                 ),
               ],
